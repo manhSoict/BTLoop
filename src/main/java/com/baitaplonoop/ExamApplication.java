@@ -12,13 +12,11 @@ import java.io.IOException;
 public class ExamApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-//        WindowManager wm = WindowManager.getInstance(); // pass primary stage to WM
-//        wm.setMainWindow(stage);
-
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai21.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hello!");
-//        stage.setScene(scene);
-        new SceneManager(stage).switchScene("hello-view.fxml");
+        stage.setScene(scene);
+//        new SceneManager(stage).switchScene("hello-view.fxml");
 
         stage.show();
     }

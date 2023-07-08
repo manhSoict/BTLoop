@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="322a0090-d631-46f8-b5d6-462122077425" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entities/Catetory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entities/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai61.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai62.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/managers/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/managers/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Test.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai6.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\Code\JAVA\BTLoop\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com" />
       <recent name="com.baitaplonoop" />
