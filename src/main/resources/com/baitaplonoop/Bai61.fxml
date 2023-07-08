@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane prefHeight="520.0" prefWidth="926.0">
+            <children>
+                <Pane layoutX="6.0" layoutY="130.0" prefHeight="504.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
+                    <children>
+                        <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="292.0" text="Thi giữa kỳ 2 môn công nghệ" textAlignment="CENTER" textFill="#e70b0b">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="827.0" layoutY="14.0" prefHeight="17.0" prefWidth="18.0">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../../static/image/settings.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                        <Label layoutX="857.0" layoutY="14.0" prefHeight="17.0" prefWidth="18.0" />
+                        <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="859.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../static/image/Caret.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="604.0" layoutY="72.0" prefHeight="24.0" prefWidth="62.0" text="Time limit:" />
+                        <Label contentDisplay="CENTER" layoutX="14.0" layoutY="123.0" prefHeight="30.0" prefWidth="366.0" text="Summary of your previous attempts" textAlignment="CENTER" textFill="#e70b0b">
+                            <font>
+                                <Font name="Symbol" size="17.0" />
+                            </font>
+                        </Label>
+                        <Pane layoutX="5.0" layoutY="159.0" prefHeight="45.0" prefWidth="904.0" style="-fx-background-color: rgb(0,159,229, 1);">
+                            <children>
+                                <Label contentDisplay="CENTER" layoutX="276.0" layoutY="8.0" prefHeight="30.0" prefWidth="62.0" text="Attempt" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <Label contentDisplay="CENTER" layoutX="482.0" layoutY="8.0" prefHeight="30.0" prefWidth="62.0" text="Stage" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font name="Calibri Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Label layoutX="666.0" layoutY="72.0" prefHeight="24.0" prefWidth="62.0" text="1 hour" />
+                        <Label layoutX="604.0" layoutY="99.0" prefHeight="24.0" prefWidth="105.0" text="Granding methods:" />
+                        <Label layoutX="709.0" layoutY="99.0" prefHeight="24.0" prefWidth="75.0" text="Last attempts" />
+                        <Pane layoutX="5.0" layoutY="204.0" prefHeight="45.0" prefWidth="904.0" style="-fx-background-color: rgb(237,237,237, 1);">
+                            <children>
+                                <Label contentDisplay="CENTER" layoutX="274.0" layoutY="10.0" prefHeight="30.0" prefWidth="72.0" text="Preview" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label contentDisplay="CENTER" layoutX="483.0" layoutY="8.0" prefHeight="30.0" prefWidth="112.0" text="Never sumitted" textAlignment="CENTER">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Label alignment="CENTER" layoutX="660.0" layoutY="317.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="PREVIEW QUIZ NOW" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri" size="18.0" />
+                            </font>
+                        </Label>
+                        <ComboBox layoutX="604.0" layoutY="407.0" prefHeight="25.0" prefWidth="98.0" promptText="Jump to..." style="-fx-background-color: white; -fx-border-color: black;" />
+                    </children></Pane>
+                <Pane layoutX="5.0" layoutY="50.0" prefHeight="76.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5); -fx-background-color: white;">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="2.0" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
+                            <font>
+                                <Font name="Bauhaus 93" size="36.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="44.0" prefHeight="24.0" prefWidth="42.0" text="Home" />
+                        <Label alignment="CENTER" layoutX="65.0" layoutY="44.0" prefHeight="24.0" prefWidth="64.0" text="My course" />
+                        <Label alignment="CENTER" layoutX="138.0" layoutY="44.0" prefHeight="24.0" prefWidth="81.0" text="THI CUỐI KỲ" />
+                        <Label alignment="CENTER" layoutX="54.0" layoutY="44.0" prefHeight="24.0" prefWidth="11.0" text="/" />
+                        <Label alignment="CENTER" layoutX="130.0" layoutY="44.0" prefHeight="24.0" prefWidth="11.0" text="/" />
+                        <Label alignment="CENTER" layoutX="224.0" layoutY="44.0" prefHeight="24.0" prefWidth="47.0" text="General" />
+                        <Label alignment="CENTER" layoutX="213.0" layoutY="44.0" prefHeight="24.0" prefWidth="11.0" text="/" />
+                        <Label alignment="CENTER" layoutX="272.0" layoutY="44.0" prefHeight="24.0" prefWidth="11.0" text="/" />
+                        <Label alignment="CENTER" layoutX="283.0" layoutY="44.0" prefHeight="24.0" prefWidth="167.0" text="Thi giữa kỳ 2 môn công nghệ" />
+                    </children>
+                </Pane>
+                <Pane prefHeight="45.0" prefWidth="920.0" style="-fx-background-color: rgb(0,159,229, 1);" />
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
