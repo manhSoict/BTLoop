@@ -14,7 +14,7 @@ public class ExamApplication extends Application {
         WindowManager wm = WindowManager.getInstance(); // pass primary stage to WM
         wm.setMainWindow(stage);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Test.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);

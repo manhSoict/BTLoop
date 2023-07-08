@@ -8,7 +8,7 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
+    <Button fx:id="" onAction="#onHelloButtonClick" text="Hello!" />
 
     <Label fx:id="welcomeText" />
 </VBox>
