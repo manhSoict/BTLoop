@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/javafx/11.0.14-internal">
    <content>
       <AnchorPane prefHeight="520.0" prefWidth="926.0">
          <children>
-            <Pane fx:id="setting" layoutX="6.0" layoutY="102.0" prefHeight="670.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5);">
+            <Pane layoutX="6.0" layoutY="102.0" prefHeight="670.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5);">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="2.0" prefHeight="30.0" prefWidth="316.0" text="Adding a Multiple choice question" textAlignment="CENTER" textFill="#e70b0b">
                      <font>
