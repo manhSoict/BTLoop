@@ -2,7 +2,6 @@ package com.controllers;
 
 import java.io.IOException;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -26,7 +25,8 @@ public class controllerBai1 {
     private AnchorPane PanelQS;
     @FXML
     public Label turnedittingon;
-    
+    @FXML
+    public Label setting;
     public void initialize() {
         PanelQS.setVisible(false); // ẩn panel PanelQS ban đầu
     }
@@ -42,7 +42,7 @@ public class controllerBai1 {
     
     @FXML
     public void openBai21(MouseEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Bai2/Bai21.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai21.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

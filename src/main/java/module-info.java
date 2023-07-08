@@ -8,4 +8,6 @@ module com.example.baitaplonoop {
 
     opens com.baitaplonoop to javafx.fxml;
     exports com.baitaplonoop;
+    exports com.controllers;
+    opens com.controllers to javafx.fxml;
 }
