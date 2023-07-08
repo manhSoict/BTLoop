@@ -1,53 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai1">
    <content>
-      <AnchorPane prefHeight="520.0" prefWidth="926.0">
+      <AnchorPane prefHeight="520.0" prefWidth="926.0" style="-fx-background-color: rgb(256,256,256,1);">
          <children>
-            <Pane layoutX="6.0" layoutY="145.0" prefHeight="367.0" prefWidth="914.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
+            <Pane layoutX="6.0" layoutY="152.0" prefHeight="367.0" prefWidth="914.0" style="-fx-border-color: rgba(171, 175, 179, 0.5); -fx-background-color: rgba(256,256,256,1);">
                <children>
-                  <Label layoutX="273.0" layoutY="29.0" prefHeight="30.0" prefWidth="315.0" text="Kiểm tra cuối kỳ môn IT4958Q">
+                  <Label layoutX="211.0" layoutY="86.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử KTLT">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="273.0" layoutY="84.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử KTLT">
+                  <Label layoutX="211.0" layoutY="140.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Tin học 7">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="273.0" layoutY="140.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Tin học 7">
+                  <Label layoutX="211.0" layoutY="193.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Sử Địa 7">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="273.0" layoutY="193.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Sử Địa 7">
+                  <Label layoutX="211.0" layoutY="248.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 môn Công nghệ">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label layoutX="273.0" layoutY="248.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 môn Công nghệ">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children></Pane>
-            <Pane layoutX="6.0" layoutY="33.0" prefHeight="102.0" prefWidth="911.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
+                  <Label layoutX="164.0" layoutY="91.0" />
+                  <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="164.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../checkbox.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="165.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../checkbox.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="165.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../checkbox.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="30.0" layoutX="165.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../checkbox.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="6.0" layoutY="33.0" prefHeight="102.0" prefWidth="911.0" style="-fx-border-color: rgba(171, 175, 179, 0.5); -fx-background-color: rgba(256,256,256,1);">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="14.0" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
                      <font>
-                        <Font name="Bauhaus 93" size="36.0" />
+                        <Font name=".VnTime" size="36.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="12.0" layoutY="64.0" prefHeight="24.0" prefWidth="42.0" text="Home" textFill="RED" />
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="64.0" prefHeight="24.0" prefWidth="42.0" text="Home" textFill="RED" />
                   <Label alignment="CENTER" layoutX="63.0" layoutY="64.0" prefHeight="24.0" prefWidth="64.0" text="My course" />
-                  <Label alignment="CENTER" layoutX="136.0" layoutY="64.0" prefHeight="24.0" prefWidth="81.0" text="THI CUỐI KỲ" textFill="RED" />
+                  <Label alignment="CENTER" layoutX="134.0" layoutY="64.0" prefHeight="24.0" prefWidth="81.0" text="THI CUỐI KỲ" textFill="RED" />
                   <Label alignment="CENTER" layoutX="52.0" layoutY="64.0" prefHeight="24.0" prefWidth="11.0" text="/" />
                   <Label alignment="CENTER" layoutX="128.0" layoutY="64.0" prefHeight="24.0" prefWidth="11.0" text="/" />
                   <Label fx:id="turnedittingon" alignment="CENTER" layoutX="714.0" layoutY="56.0" onMouseClicked="#openBai21" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: rgba(28, 89, 153,1);" text="TURN EDDITING ON" textFill="WHITE">
@@ -55,7 +75,6 @@
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="setting" alignment="CENTER" layoutX="804.0" layoutY="19.0" onMouseClicked="#AppearOrHide" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: gray;" text="Setting" />
                   <AnchorPane fx:id="PanelQS" layoutX="654.0" layoutY="56.0" onRotationStarted="#initialize" prefHeight="114.0" prefWidth="252.0" style="-fx-background-color: white; -fx-border-color: rgba(171, 175, 179, 0.5);">
                      <children>
                         <Label layoutX="13.0" layoutY="22.0" prefHeight="27.0" prefWidth="122.0" text="Question bank" textFill="#348eef">
@@ -69,9 +88,10 @@
                         <Label layoutX="158.0" layoutY="80.0" prefHeight="18.0" prefWidth="82.0" text="Export" textFill="#3387e1" />
                      </children>
                   </AnchorPane>
+                  <FontAwesomeIconView glyphName="COG" layoutX="779.0" layoutY="40.0" scaleX="2.0" scaleY="2.0" selectionFill="#171991" text="" wrappingWidth="25.485787391662598" />
                </children>
             </Pane>
-            <Pane prefHeight="47.0" prefWidth="922.0" style="-fx-background-color: rgba(28, 89, 153,1);" />
+            <Pane prefHeight="47.0" prefWidth="922.0" style="-fx-background-color: rgb(0,159,229, 1);" />
          </children>
       </AnchorPane>
    </content>
