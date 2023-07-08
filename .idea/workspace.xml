@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="322a0090-d631-46f8-b5d6-462122077425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai61.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai62.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai73.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai6.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/Caret.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/Caret_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/avt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/bars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/bin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/check-mark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/four-arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/hinhdauhoicham.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/options.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/question_mark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/image/zoom-in.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
