@@ -1,4 +1,4 @@
-package com.example.baitaplonoop;
+package com.baitaplonoop;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

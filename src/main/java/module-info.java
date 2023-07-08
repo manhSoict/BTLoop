@@ -6,6 +6,6 @@ module com.example.baitaplonoop {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.baitaplonoop to javafx.fxml;
-    exports com.example.baitaplonoop;
+    opens com.baitaplonoop to javafx.fxml;
+    exports com.baitaplonoop;
 }

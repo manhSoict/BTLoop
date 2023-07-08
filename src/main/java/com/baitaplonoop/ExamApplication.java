@@ -1,5 +1,6 @@
-package com.example.baitaplonoop;
+package com.baitaplonoop;
 
+import com.managers.WindowManager;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -7,10 +8,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class ExamApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        WindowManager wm = WindowManager.getInstance(); // pass primary stage to WM
+        wm.setMainWindow(stage);
+
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Hello!");
         stage.setScene(scene);
