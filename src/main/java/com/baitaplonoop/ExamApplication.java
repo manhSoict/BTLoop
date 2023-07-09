@@ -12,8 +12,9 @@ import java.io.IOException;
 public class ExamApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+
         FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai21.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
+        Scene scene = new Scene(fxmlLoader.load(), 926, 520);
         stage.setTitle("Hello!");
         stage.setScene(scene);
 //        new SceneManager(stage).switchScene("hello-view.fxml");
