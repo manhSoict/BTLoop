@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
@@ -88,10 +89,15 @@
                         <Label layoutX="158.0" layoutY="80.0" prefHeight="18.0" prefWidth="82.0" text="Export" textFill="#3387e1" />
                      </children>
                   </AnchorPane>
-                  <FontAwesomeIconView fill="#3cc8ec" glyphName="COG" layoutX="820.0" layoutY="41.0" scaleX="2.0" scaleY="2.0" selectionFill="#0073a5" text="" wrappingWidth="10.685799598693848" />
+<!--                  <FontAwesomeIconView fill="#3cc8ec" glyphName="COG" layoutX="820.0" layoutY="41.0" scaleX="2.0" scaleY="2.0" selectionFill="#0073a5" text="" wrappingWidth="10.685799598693848" />-->
                   <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="836.0" layoutY="27.0" onMouseClicked="#openBai21" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../static/image/Caret.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="811.0" layoutY="22.0" onMouseClicked="#openBai21" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../static/image/settings.png" />
                      </image>
                   </ImageView>
                </children>
