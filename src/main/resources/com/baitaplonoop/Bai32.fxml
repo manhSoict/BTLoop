@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai32">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1237.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai32">
    <content>
-      <AnchorPane prefHeight="520.0" prefWidth="926.0">
+      <AnchorPane prefHeight="1142.0" prefWidth="926.0">
          <children>
-            <Pane layoutX="6.0" layoutY="102.0" prefHeight="670.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5);">
+            <Pane layoutX="6.0" layoutY="102.0" prefHeight="1128.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="2.0" prefHeight="30.0" prefWidth="316.0" text="Adding a Multiple choice question" textAlignment="CENTER" textFill="#e70b0b">
                      <font>
@@ -38,7 +38,7 @@
                         <TextArea layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
                         <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 1" />
                         <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                        <ComboBox fx:id="GradeC1" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" />
+                        <ComboBox fx:id="GradeC1" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="285.0" layoutY="436.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
@@ -46,29 +46,57 @@
                         <TextArea layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
                         <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 2" />
                         <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                        <ComboBox fx:id="GradeC2" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" />
+                        <ComboBox fx:id="GradeC2" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
                      </children>
                   </AnchorPane>
-                  <Label alignment="CENTER" layoutX="320.0" layoutY="547.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="BLANK FOR 3 MORE CHOICES" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="320.0" layoutY="586.0" prefHeight="32.0" prefWidth="276.0" style="-fx-background-color: rgb(0,159,229, 1);" text="SAVE CHANGES AND CONTINUE EDITTING" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="328.0" layoutY="630.0" prefHeight="33.0" prefWidth="129.0" style="-fx-background-color: rgb(231,11,11, 1);" text="SAVE CHANGE" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="471.0" layoutY="630.0" prefHeight="33.0" prefWidth="89.0" style="-fx-background-color: rgb(0,159,229, 1);" text="CANCEL" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="12.0" />
-                     </font>
-                  </Label>
+                  <AnchorPane fx:id="Choice3" layoutX="285.0" layoutY="551.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <TextArea layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
+                        <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 3" />
+                        <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC3" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Choice4" layoutX="285.0" layoutY="665.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <TextArea layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
+                        <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 4" />
+                        <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC4" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Choice5" layoutX="285.0" layoutY="781.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <TextArea layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
+                        <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 5" />
+                        <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC5" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="PaneLabel" layoutX="295.0" layoutY="895.0" onMouseClicked="#clickBalnkmore3choice" prefHeight="171.0" prefWidth="319.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label fx:id="morechoice" alignment="CENTER" layoutX="39.0" layoutY="24.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="BLANK FOR 3 MORE CHOICES" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="39.0" layoutY="68.0" prefHeight="32.0" prefWidth="276.0" style="-fx-background-color: rgb(0,159,229, 1);" text="SAVE CHANGES AND CONTINUE EDITTING" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="128.0" prefHeight="33.0" prefWidth="129.0" style="-fx-background-color: rgb(231,11,11, 1);" text="SAVE CHANGE" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="177.0" layoutY="128.0" prefHeight="33.0" prefWidth="89.0" style="-fx-background-color: rgb(0,159,229, 1);" text="CANCEL" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
                </children></Pane>
             <Pane layoutX="5.0" layoutY="29.0" prefHeight="69.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
                <children>
