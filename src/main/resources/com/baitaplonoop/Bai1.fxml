@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai1">
    <content>
       <AnchorPane prefHeight="520.0" prefWidth="926.0" style="-fx-background-color: rgb(256,256,256,1);">
          <children>
@@ -88,7 +88,12 @@
                         <Label layoutX="158.0" layoutY="80.0" prefHeight="18.0" prefWidth="82.0" text="Export" textFill="#3387e1" />
                      </children>
                   </AnchorPane>
-                  <FontAwesomeIconView glyphName="COG" layoutX="779.0" layoutY="40.0" scaleX="2.0" scaleY="2.0" selectionFill="#171991" text="" wrappingWidth="25.485787391662598" />
+                  <FontAwesomeIconView fill="#3cc8ec" glyphName="COG" layoutX="820.0" layoutY="41.0" scaleX="2.0" scaleY="2.0" selectionFill="#0073a5" text="" wrappingWidth="10.685799598693848" />
+                  <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="836.0" layoutY="27.0" onMouseClicked="#openBai21" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../static/image/Caret.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
             <Pane prefHeight="47.0" prefWidth="922.0" style="-fx-background-color: rgb(0,159,229, 1);" />

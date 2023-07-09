@@ -23,7 +23,7 @@ public class controllerBai21 implements Initializable{
 	@FXML
 	public ComboBox<String> comboBox;
 	@FXML
-	public Label Categories;
+	public Label creatnewquestion;
 	@FXML
 	private CheckBox showQuestion;
 	@FXML
