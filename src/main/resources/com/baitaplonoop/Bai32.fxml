@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/javafx/11.0.14-internal">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="782.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai32">
    <content>
       <AnchorPane prefHeight="520.0" prefWidth="926.0">
          <children>
@@ -38,7 +38,7 @@
                         <TextArea layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
                         <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 1" />
                         <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                        <ComboBox layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" />
+                        <ComboBox fx:id="GradeC1" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="285.0" layoutY="436.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
@@ -46,7 +46,7 @@
                         <TextArea layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
                         <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 2" />
                         <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                        <ComboBox layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" />
+                        <ComboBox fx:id="GradeC2" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" />
                      </children>
                   </AnchorPane>
                   <Label alignment="CENTER" layoutX="320.0" layoutY="547.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="BLANK FOR 3 MORE CHOICES" textFill="WHITE">
