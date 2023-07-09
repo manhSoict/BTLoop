@@ -1,0 +1,17 @@
+{
+    "categories" : [
+        {
+            "name": "Default",
+            "children" : [
+                {
+                    "name": "IT",
+                    "children": []
+                },
+                {
+                    "name": "Math",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

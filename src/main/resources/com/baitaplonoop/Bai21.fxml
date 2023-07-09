@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai21">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai21">
    <content>
       <AnchorPane prefHeight="520.0" prefWidth="926.0">
          <children>
@@ -58,7 +54,12 @@
                      <content>
                         <Pane prefHeight="27.0" prefWidth="872.0">
                            <children>
-                              <Label layoutX="121.0" layoutY="5.0" prefHeight="17.0" prefWidth="89.0" text="Đã hiển thị câu hỏi" />
+                              <TableView prefHeight="254.0" prefWidth="872.0">
+                                <columns>
+                                  <TableColumn minWidth="0.0" prefWidth="774.0" text="Question" />
+                                  <TableColumn minWidth="0.0" prefWidth="97.0" text="Actions" />
+                                </columns>
+                              </TableView>
                            </children>
                         </Pane>
                      </content>
