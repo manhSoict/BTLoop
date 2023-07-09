@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="322a0090-d631-46f8-b5d6-462122077425" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai73.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/entities/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai63.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/image/Caret blue.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/Caret.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/Caret_white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/avt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/bars.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/bin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/check-mark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/four-arrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/hinhdauhoicham.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/pencil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/plus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/question_mark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/zoom-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entities/Catetory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entities/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entities/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai73.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai73.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Test.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,14 +40,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Lenovo/.m2/repository/org/openjfx/javafx-graphics/20-ea+4/javafx-graphics-20-ea+4-win.jar",
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\Code\JAVA\BTLoop\src" />

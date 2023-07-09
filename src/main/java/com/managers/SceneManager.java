@@ -1,5 +1,6 @@
 package com.managers;
 
+import com.baitaplonoop.ExamApplication;
 import com.controllers.BaseController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -24,7 +25,7 @@ public class SceneManager {
 
     public void switchScene(String url) {
         Scene scene = scenes.computeIfAbsent(url, u -> {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(u));
+            FXMLLoader loader = new FXMLLoader(ExamApplication.class.getResource(u));
             try {
                 Pane p = loader.load();
                 BaseController controller = loader.getController();
