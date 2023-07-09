@@ -88,8 +88,8 @@ public class controllerBai21 implements Initializable {
 	    }
 	}
 	    @FXML
-    public void openBai22(MouseEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai22.fxml"));
+    public void openBai32(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai32.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
