@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import com.entities.Category;
 import com.entities.Question;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,10 +18,11 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.scene.input.MouseEvent;
 import javafx.util.Callback;
+import javafx.util.StringConverter;
 
 public class controllerBai21 implements Initializable {
 	@FXML
-	public ComboBox<String> comboBox;
+	public ComboBox<Category> comboBox;
 	@FXML
 	public Label creatnewquestion;
 	@FXML
@@ -30,40 +32,50 @@ public class controllerBai21 implements Initializable {
 	@FXML
 	private TableView<Question> questionTable;
 
-	
-	ObservableList<String> list = FXCollections.observableArrayList("Default","   IT","  Math");
+
+	ObservableList<Category> list = FXCollections.observableArrayList();
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-//		comboBox.setCellFactory(
-//				new Callback<ListView<String>, ListCell<String>>() {
-//					@Override public ListCell<String> call(ListView<String> param) {
-//						final ListCell<String> cell = new ListCell<String>() {
-//							{
-//								super.setPrefWidth(100);
-//							}
-//							@Override public void updateItem(String item,
-//															 boolean empty) {
-//								super.updateItem(item, empty);
-//								if (item != null) {
-//									setText(item);
-//									if (item.contains("High")) {
-//										setTextFill(Color.RED);
-//									}
-//									else if (item.contains("Low")){
-//										setTextFill(Color.GREEN);
-//									}
-//									else {
-//										setTextFill(Color.BLACK);
-//									}
-//								}
-//								else {
-//									setText(null);
-//								}
-//							}
-//						};
-//						return cell;
-//					}
-//				});
+		list.add(new Category("Default"));
+		Category math = new Category("Math");
+		math.setTreeLevel(1);
+		list.add(math);
+		comboBox.setConverter(new StringConverter<Category>() {
+			@Override
+			public String toString(Category category) {
+				return category.getName();
+			}
+
+			@Override
+			public Category fromString(String s) {
+				return null;
+			}
+		});
+		comboBox.setCellFactory(
+				new Callback<ListView<Category>, ListCell<Category>>() {
+					@Override public ListCell<Category> call(ListView<Category> param) {
+						final ListCell<Category> cell = new ListCell<Category>() {
+							{
+								super.setPrefWidth(100);
+							}
+							@Override public void updateItem(Category item,
+															 boolean empty) {
+								super.updateItem(item, empty);
+								if (item != null) {
+									String itemString = "";
+									for(int i = 0; i < item.getTreeLevel(); ++i) {
+										itemString += " ";
+									}
+									setText(itemString + item.getName());
+								}
+								else {
+									setText(null);
+								}
+							}
+						};
+						return cell;
+					}
+				});
 		comboBox.setItems(list);
 		panelQuestion.setVisible(false);
 	}
