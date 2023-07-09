@@ -1,8 +1,9 @@
 package com.entities;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Question {
+public class Question implements Serializable {
 
     public Question() {
 
