@@ -71,7 +71,7 @@
                   <Label alignment="CENTER" layoutX="134.0" layoutY="64.0" prefHeight="24.0" prefWidth="81.0" text="THI CUỐI KỲ" textFill="RED" />
                   <Label alignment="CENTER" layoutX="52.0" layoutY="64.0" prefHeight="24.0" prefWidth="11.0" text="/" />
                   <Label alignment="CENTER" layoutX="128.0" layoutY="64.0" prefHeight="24.0" prefWidth="11.0" text="/" />
-                  <Label fx:id="turnedittingon" alignment="CENTER" layoutX="714.0" layoutY="56.0" onMouseClicked="#openBai5" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: rgba(28, 89, 153,1);" text="TURN EDDITING ON" textFill="WHITE">
+                  <Label fx:id="turnedittingon" alignment="CENTER" layoutX="714.0" layoutY="56.0" onMouseClicked="#openBai21" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: rgba(28, 89, 153,1);" text="TURN EDDITING ON" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>

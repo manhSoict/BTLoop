@@ -1,22 +1,32 @@
 package com.baitaplonoop;
 
-import com.managers.SceneManager;
-import com.managers.WindowManager;
+import com.entities.Category;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 
 public class ExamApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai32.fxml"));
+        Category defaultCtg = new Category("Default");
+        Category math = new Category("Math");
+        math.setTreeLevel(3);
+        defaultCtg.getChildren().add(math);
+        try (FileOutputStream fos = new FileOutputStream("category.txt");
+             ObjectOutputStream oos = new ObjectOutputStream(fos); ) {
+                oos.writeObject(defaultCtg);
+        } catch (IOException i) {
+            i.printStackTrace();
+        }
+
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai1.fxml"));
         Parent parent = fxmlLoader.load();
 
         Scene scene = new Scene(parent, 926, 520);

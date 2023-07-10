@@ -1,6 +1,8 @@
 package com.controllers;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -36,10 +38,23 @@ public class controllerBai21 implements Initializable {
 	ObservableList<Category> list = FXCollections.observableArrayList();
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		list.add(new Category("Default"));
-		Category math = new Category("Math");
-		math.setTreeLevel(1);
-		list.add(math);
+		Category defaultCtg = null;
+//		list.add(new Category("Default"));
+//		Category math = new Category("Math");
+//		math.setTreeLevel(1);
+//		list.add(math);
+
+		try (FileInputStream fos = new FileInputStream("category.txt");
+		ObjectInputStream oos = new ObjectInputStream(fos); ) {
+			defaultCtg = (Category) oos.readObject();
+		} catch (IOException i) {
+			i.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		list.add(defaultCtg);
+		list.add(defaultCtg.getChildren().get(0));
 		comboBox.setConverter(new StringConverter<Category>() {
 			@Override
 			public String toString(Category category) {
@@ -77,6 +92,7 @@ public class controllerBai21 implements Initializable {
 					}
 				});
 		comboBox.setItems(list);
+		comboBox.setValue(list.get(0));
 		panelQuestion.setVisible(false);
 	}
 	@FXML

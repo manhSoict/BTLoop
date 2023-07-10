@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="322a0090-d631-46f8-b5d6-462122077425" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai32.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai22.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai32.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/image/avatar.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,15 +32,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/.m2/repository/org/openjfx/javafx-graphics/20-ea+4/javafx-graphics-20-ea+4-win.jar&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/learning/Java/Projects/OOP-project-HUST-2022.2",
+    "settings.editor.selected.configurable": "preferences.JavaFX"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Desktop\Code\JAVA\BTLoop\src" />
