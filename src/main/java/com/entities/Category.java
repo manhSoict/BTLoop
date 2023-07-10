@@ -7,7 +7,8 @@ import java.util.List;
 public class Category implements Serializable {
     private static final long serialVersionUID = 1L;
     Category parent;
-//    List<Question> question;
+    List<Question> questions;
+    int questionCount;
     List<Category> children;
     String name;
     String info;
@@ -17,11 +18,13 @@ public class Category implements Serializable {
 
     public Category() {
         children = new ArrayList<>();
+        questionCount = 0;
     }
 
     public Category(String name) {
         children = new ArrayList<>();
         this.name = name;
+        questionCount = 0;
     }
 
     public Category getParent() {
@@ -71,4 +74,13 @@ public class Category implements Serializable {
     public void setTreeLevel(int treeLevel) {
         this.treeLevel = treeLevel;
     }
+
+    public void addQuestion(Question quest) {
+        questions.add(quest);
+    }
+
+    public void removeQuestion(Question question) {
+        questions.remove(question);
+    }
+
 }

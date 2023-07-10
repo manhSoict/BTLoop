@@ -1,8 +1,6 @@
 package com.controllers;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -39,10 +37,6 @@ public class controllerBai21 implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		Category defaultCtg = null;
-//		list.add(new Category("Default"));
-//		Category math = new Category("Math");
-//		math.setTreeLevel(1);
-//		list.add(math);
 
 		try (FileInputStream fos = new FileInputStream("category.txt");
 		ObjectInputStream oos = new ObjectInputStream(fos); ) {

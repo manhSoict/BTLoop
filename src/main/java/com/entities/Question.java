@@ -1,6 +1,7 @@
 package com.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Question implements Serializable {
@@ -11,9 +12,7 @@ public class Question implements Serializable {
     int id;
     String question;
 
-    int CorrectAnsId;
-
-    List<String> Answers;
+    List<Option> Options;
 
     public int getId() {
         return id;
@@ -28,13 +27,6 @@ public class Question implements Serializable {
 
     public void setQuestion(String question) {
         this.question = question;
-    }
-
-    public int getAns() {
-        return CorrectAnsId;
-    }
-
-    public void setAns(int ans) {
-        CorrectAnsId = ans;
+        Options = new ArrayList<>();
     }
 }
