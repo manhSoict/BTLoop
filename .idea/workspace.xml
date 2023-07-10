@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="322a0090-d631-46f8-b5d6-462122077425" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai33.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai34.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai32b.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai21.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai32.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai21.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai23.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai33.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai24.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai34.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai32.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai32.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai5.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai63.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai63.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai65.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai65.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

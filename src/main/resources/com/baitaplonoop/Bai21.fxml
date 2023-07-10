@@ -20,12 +20,12 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="Categories" alignment="CENTER" layoutX="103.0" prefHeight="40.0" prefWidth="97.0" text="Categories" textFill="#009fe5">
+                  <Label fx:id="LabelCategories" alignment="CENTER" layoutX="103.0" onMouseClicked="#openBai32" prefHeight="40.0" prefWidth="97.0" text="Categories" textFill="#009fe5">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="200.0" prefHeight="40.0" prefWidth="77.0" text="Import" textFill="#009fe5">
+                  <Label fx:id="LabelImport" alignment="CENTER" layoutX="200.0" onMouseClicked="#openBai33" prefHeight="40.0" prefWidth="77.0" text="Import" textFill="#009fe5">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -69,7 +69,7 @@
                </children></Pane>
             <Pane layoutX="5.0" layoutY="44.0" prefHeight="77.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="2.0" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
+                  <Label fx:id="LabelIT" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="2.0" onMouseClicked="#openBai1" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
                      <font>
                         <Font name=".VnTime" size="36.0" />
                      </font>

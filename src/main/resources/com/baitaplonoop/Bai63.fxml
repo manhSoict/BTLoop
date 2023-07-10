@@ -7,57 +7,52 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="622.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai5">
     <children>
-        <StackPane layoutX="322.0" layoutY="127.0" prefHeight="519.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <children>
-                <AnchorPane prefHeight="623.0" prefWidth="883.0" style="-fx-background-color: white;">
-                    <children>
-                        <Label alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="50.0" layoutY="14.0" prefHeight="30.0" prefWidth="358.0" text="Add from the question bank at the end" textFill="#ec0000">
-                            <font>
-                                <Font name="Tahoma" size="20.0" />
-                            </font>
-                        </Label>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="824.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../static/image/x.png" />
-                     </image>
-                  </ImageView>
-                  <Line endX="742.9999389648438" endY="3.814697265625E-6" layoutX="128.0" layoutY="44.0" startX="-100.0" stroke="#535252" />
-                  <ScrollPane layoutX="4.0" layoutY="55.0" prefHeight="497.0" prefWidth="872.0" AnchorPane.rightAnchor="7.2000000000000455">
-                     <content>
-                        <AnchorPane prefHeight="135.0" prefWidth="870.0" style="-fx-background-color: white;">
-                           <children>
-                              <Label alignment="CENTER" layoutX="63.0" layoutY="1.0" prefHeight="26.0" prefWidth="122.0" text="Select a catelogy:">
-                                 <font>
-                                    <Font size="15.0" />
-                                 </font>
-                              </Label>
-                              <ComboBox fx:id="comboBox1" layoutX="233.0" onAction="#showpanelQuestion" onMouseClicked="#showpanelQuestion" prefHeight="25.0" prefWidth="222.0" promptText="  Default" />
-                              <Label alignment="CENTER" layoutX="98.0" layoutY="41.0" prefHeight="26.0" prefWidth="83.0" text="Search options" textFill="#009fe5" />
-                              <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="181.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../static/image/Caret%20blue.png" />
-                                 </image>
-                              </ImageView>
-                              <CheckBox layoutX="24.0" layoutY="91.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="156.0" text="Also show old questions" />
-                              <CheckBox fx:id="showQuestion1" layoutX="24.0" layoutY="67.0" mnemonicParsing="false" onAction="#showpanelQuestion" onMouseClicked="#showpanelQuestion" prefHeight="17.0" prefWidth="261.0" text="Also show questions from the subcategories" />
-                           </children>
-                        </AnchorPane>
-                     </content>
-                  </ScrollPane>
-                  <Label alignment="CENTER" layoutX="50.0" layoutY="569.0" prefHeight="38.0" prefWidth="282.0" style="-fx-background-color: rgba(0,115,165,255);" text="ADD SELECT QUESTIONS TO THE QUIZ" textFill="WHITE">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
+          <AnchorPane prefHeight="623.0" prefWidth="883.0" style="-fx-background-color: white;">
+              <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="50.0" layoutY="14.0" prefHeight="30.0" prefWidth="358.0" text="Add from the question bank at the end" textFill="#ec0000">
+                      <font>
+                          <Font name="Tahoma" size="20.0" />
+                      </font>
                   </Label>
-                    </children>
-                </AnchorPane>
-            </children>
-        </StackPane>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="824.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../static/image/x.png" />
+               </image>
+            </ImageView>
+            <Line endX="742.9999389648438" endY="3.814697265625E-6" layoutX="128.0" layoutY="44.0" startX="-100.0" stroke="#535252" />
+            <ScrollPane layoutX="4.0" layoutY="55.0" prefHeight="497.0" prefWidth="872.0" AnchorPane.rightAnchor="7.2000000000000455">
+               <content>
+                  <AnchorPane prefHeight="135.0" prefWidth="870.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="63.0" layoutY="1.0" prefHeight="26.0" prefWidth="122.0" text="Select a catelogy:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboBox1" layoutX="233.0" onAction="#showpanelQuestion" onMouseClicked="#showpanelQuestion" prefHeight="25.0" prefWidth="222.0" promptText="  Default" />
+                        <Label alignment="CENTER" layoutX="98.0" layoutY="41.0" prefHeight="26.0" prefWidth="83.0" text="Search options" textFill="#009fe5" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="181.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../static/image/Caret%20blue.png" />
+                           </image>
+                        </ImageView>
+                        <CheckBox layoutX="24.0" layoutY="91.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="156.0" text="Also show old questions" />
+                        <CheckBox fx:id="showQuestion1" layoutX="24.0" layoutY="67.0" mnemonicParsing="false" onAction="#showpanelQuestion" onMouseClicked="#showpanelQuestion" prefHeight="17.0" prefWidth="261.0" text="Also show questions from the subcategories" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="569.0" prefHeight="38.0" prefWidth="282.0" style="-fx-background-color: rgba(0,115,165,255);" text="ADD SELECT QUESTIONS TO THE QUIZ" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+              </children>
+          </AnchorPane>
     </children>
 </AnchorPane>

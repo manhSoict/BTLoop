@@ -13,7 +13,7 @@
    <content>
       <AnchorPane prefHeight="1142.0" prefWidth="926.0">
          <children>
-            <Pane layoutX="6.0" layoutY="102.0" prefHeight="1128.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
+            <Pane fx:id="PaneMain" layoutX="6.0" layoutY="102.0" prefHeight="1128.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="2.0" prefHeight="30.0" prefWidth="316.0" text="Adding a Multiple choice question" textAlignment="CENTER" textFill="#e70b0b">
                      <font>
@@ -73,7 +73,7 @@
                         <ComboBox fx:id="GradeC5" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="PaneLabel" layoutX="295.0" layoutY="895.0" onMouseClicked="#clickBalnkmore3choice" prefHeight="171.0" prefWidth="319.0" style="-fx-background-color: white;">
+                  <AnchorPane fx:id="PaneLabel" layoutX="295.0" layoutY="895.0" onMouseClicked="#clickBalnkmore3choice" prefHeight="171.0" prefWidth="414.0" style="-fx-background-color: white;">
                      <children>
                         <Label fx:id="morechoice" alignment="CENTER" layoutX="39.0" layoutY="24.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="BLANK FOR 3 MORE CHOICES" textFill="WHITE">
                            <font>
@@ -85,12 +85,12 @@
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="14.0" layoutY="128.0" prefHeight="33.0" prefWidth="129.0" style="-fx-background-color: rgb(231,11,11, 1);" text="SAVE CHANGE" textFill="WHITE">
+                        <Label fx:id="LabelSave" alignment="CENTER" layoutX="14.0" layoutY="128.0" onMouseClicked="#openBai21" prefHeight="33.0" prefWidth="129.0" style="-fx-background-color: rgb(231,11,11, 1);" text="SAVE CHANGE" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="177.0" layoutY="128.0" prefHeight="33.0" prefWidth="89.0" style="-fx-background-color: rgb(0,159,229, 1);" text="CANCEL" textFill="WHITE">
+                        <Label fx:id="LabelCancel" alignment="CENTER" layoutX="177.0" layoutY="128.0" onMouseClicked="#openBai21" prefHeight="33.0" prefWidth="89.0" style="-fx-background-color: rgb(0,159,229, 1);" text="CANCEL" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>

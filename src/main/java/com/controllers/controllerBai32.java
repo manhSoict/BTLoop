@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -24,13 +25,15 @@ public class controllerBai32 implements Initializable {
         @FXML
         public ComboBox<String> GradeC1,GradeC2,GradeC3,GradeC4,GradeC5;
         @FXML
-        public Label morechoice;
+        public Label morechoice,LabelSave,LabelCancel;
         @FXML
         private CheckBox showQuestion;
         @FXML
         private ScrollPane morequestion;
         @FXML
         private AnchorPane Choice3,Choice4,Choice5,PaneLabel;
+        @FXML
+        private Pane PaneMain;
         @FXML
         private TableView<Question> questionTable;
 
@@ -54,6 +57,7 @@ public class controllerBai32 implements Initializable {
         @FXML
         public void clickBalnkmore3choice(MouseEvent event) throws IOException {
             if (more3choice==false) {
+//                PaneMain.setPrefHeight(1128);
                 Choice3.setVisible(true);
                 Choice4.setVisible(true);
                 Choice5.setVisible(true);
@@ -61,8 +65,10 @@ public class controllerBai32 implements Initializable {
                 PaneLabel.setLayoutY(895);
                 more3choice = true;
                 morechoice.setText("DELETE 3 ADDED CHOICES");
+
             }
             else{
+//                PaneMain.setPrefHeight(850);
                 Choice3.setVisible(false);
                 Choice4.setVisible(false);
                 Choice5.setVisible(false);
@@ -71,12 +77,13 @@ public class controllerBai32 implements Initializable {
                 PaneLabel.setLayoutY(551);
                 more3choice = false;
                 morechoice.setText("BLANK FOR MORE 3 CHOICES");
+
             }
         }
 
     @FXML
-        public void openBai32(MouseEvent event) throws IOException {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai32.fxml"));
+        public void openBai21(MouseEvent event) throws IOException {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai21.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

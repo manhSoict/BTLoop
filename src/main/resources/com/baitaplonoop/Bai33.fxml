@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/javafx/11.0.14-internal">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai33">
    <content>
       <AnchorPane prefHeight="520.0" prefWidth="926.0">
          <children>
             <Pane fx:id="setting" layoutX="6.0" layoutY="127.0" prefHeight="502.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5);">
                <children>
-                  <Label alignment="CENTER" layoutX="14.0" prefHeight="40.0" prefWidth="89.0" text="Questions" textFill="#009fe5">
+                  <Label fx:id="LabelQuestions" alignment="CENTER" layoutX="14.0" onMouseClicked="#openBai21" prefHeight="40.0" prefWidth="89.0" text="Questions" textFill="#009fe5">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -25,7 +25,7 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="200.0" prefHeight="40.0" prefWidth="77.0" text="Import" textFill="#009fe5">
+                  <Label fx:id="LabelImport" alignment="CENTER" layoutX="200.0" onMouseClicked="#openBai34" prefHeight="40.0" prefWidth="77.0" text="Import" textFill="#009fe5">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -73,7 +73,7 @@
                </children></Pane>
             <Pane layoutX="5.0" layoutY="44.0" prefHeight="77.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="2.0" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
+                  <Label fx:id="LabelIT" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="2.0" onMouseClicked="#openBai1" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
                      <font>
                         <Font name="Bauhaus 93" size="36.0" />
                      </font>
