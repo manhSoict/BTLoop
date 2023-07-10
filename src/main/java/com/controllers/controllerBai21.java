@@ -87,7 +87,7 @@ public class controllerBai21 implements Initializable {
 	        panelQuestion.setVisible(false);
 	    }
 	}
-	    @FXML
+	@FXML
     public void openBai32(MouseEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai32.fxml"));
         Parent root = loader.load();
@@ -96,6 +96,7 @@ public class controllerBai21 implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+	@FXML
 	public void openBai33(MouseEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai33.fxml"));
 		Parent root = loader.load();

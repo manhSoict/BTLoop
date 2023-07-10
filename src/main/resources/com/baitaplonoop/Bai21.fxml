@@ -20,7 +20,7 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="LabelCategories" alignment="CENTER" layoutX="103.0" onMouseClicked="#openBai32" prefHeight="40.0" prefWidth="97.0" text="Categories" textFill="#009fe5">
+                  <Label fx:id="LabelCategories" alignment="CENTER" layoutX="103.0" onMouseClicked="#openBai33" prefHeight="40.0" prefWidth="97.0" text="Categories" textFill="#009fe5">
                      <font>
                         <Font size="15.0" />
                      </font>

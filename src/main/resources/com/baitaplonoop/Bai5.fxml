@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai5">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="744.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai5">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="767.0" prefWidth="883.0">
          <children>
@@ -104,7 +104,7 @@
                         <Spinner fx:id="hourSpinner1" layoutX="574.0" layoutY="581.0" prefHeight="26.0" prefWidth="89.0" />
                         <Spinner fx:id="daySpinner1" layoutX="263.0" layoutY="581.0" prefHeight="26.0" prefWidth="70.0" />
                         <CheckBox layoutX="802.0" layoutY="537.0" mnemonicParsing="false" text="Enable" />
-                        <CheckBox layoutX="497.0" layoutY="636.0" mnemonicParsing="false" text="Enable" />
+                        <CheckBox fx:id="checkboxTimelimit" layoutX="497.0" layoutY="636.0" mnemonicParsing="false" onMouseClicked="#clickcheckbox" text="Enable" />
                         <CheckBox layoutX="802.0" layoutY="586.0" mnemonicParsing="false" text="Enable" />
                         <ImageView fitHeight="23.0" fitWidth="12.0" layoutX="251.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -126,8 +126,8 @@
                               <Image url="@/static/image/tkb.png" />
                            </image>
                         </ImageView>
-                        <TextField layoutX="263.0" layoutY="631.0" prefHeight="26.0" prefWidth="70.0" promptText="0" />
-                        <Spinner layoutX="352.0" layoutY="632.0" prefHeight="26.0" prefWidth="102.0" />
+                        <TextField fx:id="TextfieldTime" layoutX="263.0" layoutY="631.0" prefHeight="26.0" prefWidth="70.0" promptText="0" style="-fx-border-color: rgba(220,220,220,1);" />
+                        <Spinner fx:id="SpinnerTime" layoutX="352.0" layoutY="632.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: red;" />
                         <Spinner layoutX="263.0" layoutY="678.0" prefHeight="26.0" prefWidth="239.0" />
                         <ImageView fitHeight="23.0" fitWidth="12.0" layoutX="251.0" layoutY="686.0" pickOnBounds="true" preserveRatio="true">
                            <image>
