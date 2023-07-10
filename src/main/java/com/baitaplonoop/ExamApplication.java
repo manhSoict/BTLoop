@@ -16,7 +16,7 @@ public class ExamApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai34.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai5.fxml"));
         Parent parent = fxmlLoader.load();
 
         Scene scene = new Scene(parent, 926, 520);

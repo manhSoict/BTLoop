@@ -4,8 +4,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -17,6 +20,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class controllerBai5 implements Initializable {
+    @FXML
+    private Spinner<String>  wteSpinner;
     @FXML
     private Spinner<Integer> daySpinner;
 
@@ -36,10 +41,10 @@ public class controllerBai5 implements Initializable {
     private Spinner<Integer> minuteSpinner1;
 
     @FXML
-    private Spinner<Integer> monthSpinner;
+    private Spinner<String> monthSpinner;
 
     @FXML
-    private Spinner<Integer> monthSpinner1;
+    private Spinner<String> monthSpinner1;
 
     @FXML
     private Spinner<Integer> yearSpinner;
@@ -61,9 +66,12 @@ public class controllerBai5 implements Initializable {
                 .IntegerSpinnerValueFactory(1, 31, LocalDate.now().getDayOfMonth());
         daySpinner.setValueFactory(dayValueFactory);
 
-        SpinnerValueFactory<Integer> monthValueFactory = new SpinnerValueFactory
-                .IntegerSpinnerValueFactory(1, 12, LocalDate.now().getMonthValue());
+        ObservableList<String> months = FXCollections.observableArrayList(
+                "January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+                "November", "December");
+        SpinnerValueFactory<String> monthValueFactory = new SpinnerValueFactory.ListSpinnerValueFactory<String>(months);
         monthSpinner.setValueFactory(monthValueFactory);
+        monthSpinner.getValueFactory().setValue(LocalDate.now().format(DateTimeFormatter.ofPattern("MMMM")));
 
         SpinnerValueFactory<Integer> yearValueFactory = new SpinnerValueFactory
                 .IntegerSpinnerValueFactory(1900, 2100, LocalDate.now().getYear());
@@ -76,13 +84,14 @@ public class controllerBai5 implements Initializable {
         SpinnerValueFactory<Integer> minuteValueFactory = new SpinnerValueFactory
                 .IntegerSpinnerValueFactory(0, 59, LocalTime.now().getMinute());
         minuteSpinner.setValueFactory(minuteValueFactory);
+
         SpinnerValueFactory<Integer> dayValueFactory1 = new SpinnerValueFactory
                 .IntegerSpinnerValueFactory(1, 31, LocalDate.now().getDayOfMonth());
         daySpinner1.setValueFactory(dayValueFactory1);
 
-        SpinnerValueFactory<Integer> monthValueFactory1 = new SpinnerValueFactory
-                .IntegerSpinnerValueFactory(1, 12, LocalDate.now().getMonthValue());
+        SpinnerValueFactory<String> monthValueFactory1 = new SpinnerValueFactory.ListSpinnerValueFactory<String>(months);
         monthSpinner1.setValueFactory(monthValueFactory1);
+        monthSpinner1.getValueFactory().setValue(LocalDate.now().format(DateTimeFormatter.ofPattern("MMMM")));
 
         SpinnerValueFactory<Integer> yearValueFactory1 = new SpinnerValueFactory
                 .IntegerSpinnerValueFactory(1900, 2100, LocalDate.now().getYear());
@@ -95,6 +104,11 @@ public class controllerBai5 implements Initializable {
         SpinnerValueFactory<Integer> minuteValueFactory1 = new SpinnerValueFactory
                 .IntegerSpinnerValueFactory(0, 59, LocalTime.now().getMinute());
         minuteSpinner1.setValueFactory(minuteValueFactory1);
+
+
+
+        SpinnerTime.setPromptText(" minutes");
+        wteSpinner.setPromptText(" Open attempts are submitted automatically");
 
         //Cài đặt giá trị ban đầu cho timelimit
         TextfieldTime.setEditable(false);

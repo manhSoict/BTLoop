@@ -7,9 +7,8 @@
     <list default="true" id="322a0090-d631-46f8-b5d6-462122077425" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai34.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai34.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai34.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai34.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/drag and drop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai5.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/Code/JAVA/BTLoop&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -51,6 +53,48 @@
       <recent name="com.baitaplonoop" />
     </key>
   </component>
+  <component name="RunManager" selected="Application.ExamApplication">
+    <configuration name="ExamApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.baitaplonoop.ExamApplication" />
+      <module name="BaiTapLonOOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.baitaplonoop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in BaiTapLonOOP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BaiTapLonOOP" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BTLoop" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BTLoop" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ExamApplication" />
+        <item itemvalue="JUnit.All in BaiTapLonOOP" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,6 +105,17 @@
       <updated>1688756476702</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
