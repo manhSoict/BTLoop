@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/javafx/11.0.14-internal">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai33">
    <content>
       <AnchorPane prefHeight="520.0" prefWidth="926.0">
          <children>
             <Pane fx:id="setting" layoutX="6.0" layoutY="127.0" prefHeight="502.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5);">
                <children>
-                  <Label alignment="CENTER" layoutX="14.0" prefHeight="40.0" prefWidth="89.0" text="Questions" textFill="#009fe5">
+                  <Label fx:id="LabelQuestions" alignment="CENTER" layoutX="14.0" onMouseClicked="#openBai21" prefHeight="40.0" prefWidth="89.0" text="Questions" textFill="#009fe5">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -25,7 +20,7 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="200.0" prefHeight="40.0" prefWidth="77.0" text="Import" textFill="#009fe5">
+                  <Label fx:id="LabelImport" alignment="CENTER" layoutX="200.0" onMouseClicked="#openBai34" prefHeight="40.0" prefWidth="77.0" text="Import" textFill="#009fe5">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -45,7 +40,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <ComboBox layoutX="303.0" layoutY="75.0" prefHeight="25.0" prefWidth="283.0" />
+                  <ComboBox fx:id="categoriesCombobox" onAction="#onChangeParentCate" layoutX="303.0" layoutY="75.0" prefHeight="25.0" prefWidth="283.0" />
                   <Label layoutX="23.0" layoutY="110.0" prefHeight="26.0" prefWidth="107.0" text="Name">
                      <font>
                         <Font size="14.0" />
@@ -61,10 +56,10 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextArea layoutX="303.0" layoutY="146.0" prefHeight="226.0" prefWidth="446.0" />
-                  <TextField layoutX="303.0" layoutY="111.0" prefHeight="25.0" prefWidth="366.0" />
-                  <TextField layoutX="303.0" layoutY="383.0" />
-                  <Label alignment="CENTER" layoutX="422.0" layoutY="431.0" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: rgb(231,11,11, 1);" text="ADD CATEGORY" textFill="WHITE">
+                  <TextArea fx:id="categoryInfo" layoutX="303.0" layoutY="146.0" prefHeight="226.0" prefWidth="446.0" />
+                  <TextField fx:id="categoryName" layoutX="303.0" layoutY="111.0" prefHeight="25.0" prefWidth="366.0" />
+                  <TextField fx:id="categoryId" layoutX="303.0" layoutY="383.0" />
+                  <Label onMouseClicked="#onSubmit" alignment="CENTER" layoutX="422.0" layoutY="431.0" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: rgb(231,11,11, 1);" text="ADD CATEGORY" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -73,7 +68,7 @@
                </children></Pane>
             <Pane layoutX="5.0" layoutY="44.0" prefHeight="77.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="2.0" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
+                  <Label fx:id="LabelIT" alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="2.0" onMouseClicked="#openBai1" prefHeight="42.0" prefWidth="41.0" text="IT" textAlignment="CENTER" textFill="#e70b0b">
                      <font>
                         <Font name="Bauhaus 93" size="36.0" />
                      </font>

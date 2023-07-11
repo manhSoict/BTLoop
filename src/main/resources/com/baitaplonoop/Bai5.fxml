@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -12,79 +13,81 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="743.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai5">
-    <children>
-        <StackPane layoutX="322.0" layoutY="127.0" prefHeight="743.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <children>
-                <AnchorPane prefHeight="200.0" prefWidth="200.0">
-                    <children>
-                        <Label alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="51.0" layoutY="30.0" prefHeight="30.0" prefWidth="258.0" text="Adding  a  new quiz" textFill="#ec0000">
-                            <font>
-                                <Font name="Tahoma" size="24.0" />
-                            </font>
-                            <graphic>
-                                <ImageView fitHeight="15.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@/static/image/hinhdauhoicham.png" />
-                                    </image>
-                                </ImageView>
-                            </graphic>
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="744.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai5">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="767.0" prefWidth="883.0">
+         <children>
+            <StackPane prefHeight="759.0" prefWidth="883.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" contentDisplay="RIGHT" layoutX="51.0" layoutY="30.0" prefHeight="30.0" prefWidth="265.0" text="Adding  a  new quiz" textFill="#ec0000">
+                           <font>
+                              <Font name="Tahoma" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/static/image/hinhdauhoicham.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Label>
                         <ImageView fitHeight="23.0" fitWidth="37.0" layoutX="30.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@/static/image/tichV.png" />
-                            </image>
+                           <image>
+                              <Image url="@/static/image/tichV.png" />
+                           </image>
                         </ImageView>
-                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="128.0" prefHeight="30.0" prefWidth="101.0" text="General" textFill="RED">
-                            <font>
-                                <Font size="18.0" />
-                            </font>
-                            <graphic>
-                                <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@/static/image/Caret.png" />
-                                    </image>
-                                </ImageView>
-                            </graphic>
+                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="75.0" prefHeight="30.0" prefWidth="101.0" text="General" textFill="RED">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/static/image/Caret.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Label>
                         <CheckBox alignment="CENTER" contentDisplay="RIGHT" layoutX="298.0" layoutY="445.0" mnemonicParsing="false" text=" Display description on course page">
-                            <graphic>
-                                <ImageView fitHeight="23.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@/static/image/hinhdauhoicham.png" />
-                                    </image>
-                                </ImageView>
-                            </graphic>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/static/image/hinhdauhoicham.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </CheckBox>
-                        <Label layoutX="133.0" layoutY="187.0" text="Name">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
+                        <Label layoutX="126.0" layoutY="115.0" text="Name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
                         </Label>
                         <Label layoutX="121.0" layoutY="236.0" text="Description">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
                         </Label>
-                        <TextField layoutX="298.0" layoutY="184.0" prefHeight="26.0" prefWidth="335.0" />
+                        <TextField layoutX="298.0" layoutY="112.0" prefHeight="26.0" prefWidth="335.0" />
                         <ImageView fitHeight="18.0" fitWidth="12.0" layoutX="279.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@/static/image/warning.png" />
-                            </image>
+                           <image>
+                              <Image url="@/static/image/warning.png" />
+                           </image>
                         </ImageView>
                         <TextArea layoutX="298.0" layoutY="236.0" prefHeight="200.0" prefWidth="466.0" />
                         <Line endX="620.0000610351562" layoutX="181.0" layoutY="479.0" startX="-100.0" stroke="#dcdada" />
                         <Label alignment="CENTER_RIGHT" layoutX="79.0" layoutY="486.0" prefHeight="30.0" prefWidth="82.0" text="Timing" textFill="RED">
-                            <font>
-                                <Font size="18.0" />
-                            </font>
-                            <graphic>
-                                <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@/static/image/Caret.png" />
-                                    </image>
-                                </ImageView>
-                            </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@/static/image/Caret.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </Label>
                         <Label layoutX="119.0" layoutY="537.0" text="Open the quiz" />
                         <Label layoutX="119.0" layoutY="586.0" text="Close the quiz" />
@@ -101,39 +104,50 @@
                         <Spinner fx:id="hourSpinner1" layoutX="574.0" layoutY="581.0" prefHeight="26.0" prefWidth="89.0" />
                         <Spinner fx:id="daySpinner1" layoutX="263.0" layoutY="581.0" prefHeight="26.0" prefWidth="70.0" />
                         <CheckBox layoutX="802.0" layoutY="537.0" mnemonicParsing="false" text="Enable" />
-                        <CheckBox layoutX="497.0" layoutY="636.0" mnemonicParsing="false" text="Enable" />
+                        <CheckBox fx:id="checkboxTimelimit" layoutX="497.0" layoutY="636.0" mnemonicParsing="false" onMouseClicked="#clickcheckbox" text="Enable" />
                         <CheckBox layoutX="802.0" layoutY="586.0" mnemonicParsing="false" text="Enable" />
                         <ImageView fitHeight="23.0" fitWidth="12.0" layoutX="251.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@/static/image/hinhdauhoicham.png" />
-                            </image>
+                           <image>
+                              <Image url="@/static/image/hinhdauhoicham.png" />
+                           </image>
                         </ImageView>
                         <ImageView fitHeight="23.0" fitWidth="12.0" layoutX="252.0" layoutY="638.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@/static/image/hinhdauhoicham.png" />
-                            </image>
+                           <image>
+                              <Image url="@/static/image/hinhdauhoicham.png" />
+                           </image>
                         </ImageView>
                         <ImageView fitHeight="23.0" fitWidth="12.0" layoutX="786.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@/static/image/tkb.png" />
-                            </image>
+                           <image>
+                              <Image url="@/static/image/tkb.png" />
+                           </image>
                         </ImageView>
                         <ImageView fitHeight="23.0" fitWidth="12.0" layoutX="786.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@/static/image/tkb.png" />
-                            </image>
+                           <image>
+                              <Image url="@/static/image/tkb.png" />
+                           </image>
                         </ImageView>
-                        <TextField layoutX="263.0" layoutY="631.0" prefHeight="26.0" prefWidth="70.0" promptText="0" />
-                        <Spinner layoutX="352.0" layoutY="632.0" prefHeight="26.0" prefWidth="102.0" />
+                        <TextField fx:id="TextfieldTime" layoutX="263.0" layoutY="631.0" prefHeight="26.0" prefWidth="70.0" promptText="0" style="-fx-border-color: rgba(220,220,220,1);" />
+                        <Spinner fx:id="SpinnerTime" layoutX="352.0" layoutY="632.0" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: red;" />
                         <Spinner layoutX="263.0" layoutY="678.0" prefHeight="26.0" prefWidth="239.0" />
                         <ImageView fitHeight="23.0" fitWidth="12.0" layoutX="251.0" layoutY="686.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@/static/image/hinhdauhoicham.png" />
-                            </image>
+                           <image>
+                              <Image url="@/static/image/hinhdauhoicham.png" />
+                           </image>
                         </ImageView>
-                    </children>
-                </AnchorPane>
-            </children>
-        </StackPane>
-    </children>
-</AnchorPane>
+                        <Label fx:id="LabelCreat" alignment="CENTER" layoutX="329.0" layoutY="718.0" onMouseClicked="#openBai1" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: rgb(231,11,11, 1);" text="CREAT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LabelCancel" alignment="CENTER" layoutX="466.0" layoutY="718.0" onMouseClicked="#openBai1" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: rgb(0,159,229, 1);" text="CANCEL" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
