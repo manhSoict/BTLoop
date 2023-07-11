@@ -66,7 +66,7 @@ public class ExamApplication extends Application {
             }
         }
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai61.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai74.fxml"));
         Parent parent = fxmlLoader.load();
 
         Scene scene = new Scene(parent, 926, 520);

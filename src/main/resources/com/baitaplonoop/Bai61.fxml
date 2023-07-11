@@ -105,7 +105,7 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label alignment="CENTER" layoutX="24.0" layoutY="158.0" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: RGB(192,36,36,1);" text="START ATTEMPT" textFill="WHITE">
+                        <Label fx:id="LabelStartattempt" alignment="CENTER" layoutX="24.0" layoutY="158.0" onMouseClicked="#openBai74" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: RGB(192,36,36,1);" text="START ATTEMPT" textFill="WHITE">
                            <font>
                               <Font name="Calibri" size="15.0" />
                            </font>
