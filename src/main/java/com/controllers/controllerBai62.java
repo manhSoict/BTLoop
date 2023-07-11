@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import com.baitaplonoop.ExamApplication;
 import com.entities.Question;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -42,17 +43,19 @@ public class controllerBai62 implements Initializable{
     @FXML
     TableColumn<Question, String> markColumn, questionColumn;
 
-    private List<Question> selectedQuestions = new ArrayList<>();
+    ObservableList<Question> selectedQuestions = FXCollections.observableArrayList();
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         AnchorSelect.setVisible(false); // ẩn panel PanelQS ban đầu
         LabelQuizname.setText(ExamApplication.getNewQuiz());
         LabelQuizname1.setText(ExamApplication.getNewQuiz());
-        selectedQuestions = ExamApplication.getQuizQuestions();
+        for (Question question : ExamApplication.getQuizQuestions()) {
+            selectedQuestions.add(question);
+        }
 
         questionColumn.setCellValueFactory( p -> new SimpleStringProperty(p.getValue().getQuestion()));
         markColumn.setCellValueFactory(p -> new SimpleStringProperty("1.00"));
-        questionTable.setItems((ObservableList<Question>) selectedQuestions);
+        questionTable.setItems( selectedQuestions);
         totalMarks.setText(selectedQuestions.size() + ".00");
     }
 
