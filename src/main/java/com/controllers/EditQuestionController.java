@@ -38,7 +38,7 @@ public class EditQuestionController implements Initializable {
     @FXML
     public ComboBox<String> GradeC1,GradeC2,GradeC3,GradeC4,GradeC5;
     @FXML
-    public Label morechoice,LabelSave,LabelCancel;
+    public Label morechoice,LabelSave,LabelCancel,LabelAddC3,LabelAddC4,LabelAddC5;
     @FXML
     private CheckBox showQuestion;
     @FXML
@@ -69,7 +69,10 @@ public class EditQuestionController implements Initializable {
         Choice4.setVisible(false);
         Choice5.setVisible(false);
         PaneLabel.setLayoutX(285);
-        PaneLabel.setLayoutY(551);
+        PaneLabel.setLayoutY(740);
+        LabelAddC3.setVisible(false);
+        LabelAddC4.setVisible(false);
+        LabelAddC5.setVisible(false);
 
         // setup categories
         getAllCategories(ExamApplication.getDefaultCategory());
@@ -185,10 +188,12 @@ public class EditQuestionController implements Initializable {
             Choice4.setVisible(true);
             Choice5.setVisible(true);
             PaneLabel.setLayoutX(285);
-            PaneLabel.setLayoutY(895);
+            PaneLabel.setLayoutY(1249);
             more3choice = true;
             morechoice.setText("DELETE 3 ADDED CHOICES");
-
+            LabelAddC3.setVisible(true);
+            LabelAddC4.setVisible(true);
+            LabelAddC5.setVisible(true);
         }
         else{
 //                PaneMain.setPrefHeight(850);
@@ -197,10 +202,12 @@ public class EditQuestionController implements Initializable {
             Choice5.setVisible(false);
 
             PaneLabel.setLayoutX(285);
-            PaneLabel.setLayoutY(551);
+            PaneLabel.setLayoutY(740);
             more3choice = false;
             morechoice.setText("BLANK FOR MORE 3 CHOICES");
-
+            LabelAddC3.setVisible(false);
+            LabelAddC4.setVisible(false);
+            LabelAddC5.setVisible(false);
         }
     }
 

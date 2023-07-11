@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1237.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.EditQuestionController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1600.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.EditQuestionController">
     <content>
         <AnchorPane prefHeight="1142.0" prefWidth="926.0">
             <children>
-                <Pane fx:id="PaneMain" layoutX="6.0" layoutY="102.0" prefHeight="1128.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
+                <Pane fx:id="PaneMain" layoutX="6.0" layoutY="102.0" prefHeight="1322.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
                     <children>
                         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="2.0" prefHeight="30.0" prefWidth="316.0" text="Edding a Multiple choice question" textAlignment="CENTER" textFill="#e70b0b">
                             <font>
@@ -23,52 +29,11 @@
                         <Label layoutX="50.0" layoutY="69.0" prefHeight="24.0" prefWidth="85.0" text="Category" />
                         <Label layoutX="50.0" layoutY="101.0" prefHeight="24.0" prefWidth="85.0" text="Question name" />
                         <Label layoutX="50.0" layoutY="140.0" prefHeight="24.0" prefWidth="85.0" text="Question text" />
-                        <Label layoutX="61.0" layoutY="296.0" prefHeight="24.0" prefWidth="85.0" text="Default mark" />
-                        <ComboBox fx:id="categoriesCombobox" onAction="#onChangeCategory" layoutX="285.0" layoutY="69.0" prefHeight="25.0" prefWidth="258.0" />
+                        <Label layoutX="61.0" layoutY="450.0" prefHeight="24.0" prefWidth="85.0" text="Default mark" />
+                        <ComboBox fx:id="categoriesCombobox" layoutX="285.0" layoutY="69.0" onAction="#onChangeCategory" prefHeight="25.0" prefWidth="258.0" />
                         <TextField fx:id="questionName" layoutX="285.0" layoutY="101.0" prefHeight="25.0" prefWidth="315.0" />
-                        <TextArea fx:id="questionText" layoutX="285.0" layoutY="134.0" prefHeight="157.0" prefWidth="590.0" />
-                        <TextField fx:id="questionMark" layoutX="285.0" layoutY="295.0" prefHeight="25.0" prefWidth="107.0" />
-                        <AnchorPane layoutX="285.0" layoutY="326.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
-                            <children>
-                                <TextArea fx:id="C1Text" layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
-                                <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 1" />
-                                <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                                <ComboBox fx:id="GradeC1" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
-                            </children>
-                        </AnchorPane>
-                        <AnchorPane layoutX="285.0" layoutY="436.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
-                            <children>
-                                <TextArea fx:id="C2Text" layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
-                                <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 2" />
-                                <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                                <ComboBox fx:id="GradeC2" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
-                            </children>
-                        </AnchorPane>
-                        <AnchorPane fx:id="Choice3" layoutX="285.0" layoutY="551.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
-                            <children>
-                                <TextArea fx:id="C3Text" layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
-                                <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 3" />
-                                <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                                <ComboBox fx:id="GradeC3" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
-                            </children>
-                        </AnchorPane>
-                        <AnchorPane fx:id="Choice4" layoutX="285.0" layoutY="665.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
-                            <children>
-                                <TextArea fx:id="C4Text" layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
-                                <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 4" />
-                                <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                                <ComboBox fx:id="GradeC4" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
-                            </children>
-                        </AnchorPane>
-                        <AnchorPane fx:id="Choice5" layoutX="285.0" layoutY="781.0" prefHeight="103.0" prefWidth="338.0" style="-fx-background-color: rgb(197, 204, 214);">
-                            <children>
-                                <TextArea fx:id="C5Text" layoutX="71.0" layoutY="-1.0" prefHeight="58.0" prefWidth="267.0" />
-                                <Label layoutX="13.0" layoutY="13.0" prefHeight="24.0" prefWidth="58.0" text="Choice 5" />
-                                <Label layoutX="24.0" layoutY="66.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
-                                <ComboBox fx:id="GradeC5" layoutX="70.0" layoutY="65.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
-                            </children>
-                        </AnchorPane>
-                        <AnchorPane fx:id="PaneLabel" layoutX="295.0" layoutY="895.0" onMouseClicked="#toggleBalnkmore3choice" prefHeight="171.0" prefWidth="414.0" style="-fx-background-color: white;">
+                        <TextField fx:id="questionMark" layoutX="285.0" layoutY="449.0" prefHeight="25.0" prefWidth="107.0" />
+                        <AnchorPane fx:id="PaneLabel" layoutX="285.0" layoutY="1137.0" onMouseClicked="#toggleBalnkmore3choice" prefHeight="171.0" prefWidth="414.0" style="-fx-background-color: white;">
                             <children>
                                 <Label fx:id="morechoice" alignment="CENTER" layoutX="39.0" layoutY="24.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="BLANK FOR 3 MORE CHOICES" textFill="WHITE">
                                     <font>
@@ -92,6 +57,125 @@
                                 </Label>
                             </children>
                         </AnchorPane>
+                  <AnchorPane fx:id="AnchorCauhoi" layoutX="285.0" layoutY="140.0" minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="495.0">
+                     <children>
+                        <VBox fx:id="VboxCauhoi" layoutY="-1.0" prefHeight="293.0" prefWidth="494.0">
+                           <children>
+                              <TextArea fx:id="questionText" minHeight="148.0" minWidth="494.0" prefHeight="298.0" prefWidth="461.0" style="-fx-border-style: none;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="285.0" layoutY="488.0" prefHeight="114.0" prefWidth="359.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <Label layoutX="15.0" layoutY="51.0" prefHeight="24.0" prefWidth="58.0" text="Choice 1" />
+                        <Label layoutX="15.0" layoutY="87.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC1" layoutX="84.0" layoutY="86.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                        <AnchorPane fx:id="AnchorCauhoi1" layoutX="62.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="288.0">
+                           <children>
+                              <VBox fx:id="VboxC1" layoutX="6.0" prefHeight="66.0" prefWidth="290.0">
+                                 <children>
+                                    <TextArea fx:id="C1Text" minHeight="20.0" minWidth="260.0" prefHeight="67.0" prefWidth="269.0" style="-fx-border-style: none;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="285.0" layoutY="609.0" prefHeight="114.0" prefWidth="359.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <Label layoutX="15.0" layoutY="51.0" prefHeight="24.0" prefWidth="58.0" text="Choice 2" />
+                        <Label layoutX="15.0" layoutY="87.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC2" layoutX="84.0" layoutY="86.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                        <AnchorPane fx:id="AnchorCauhoi11" layoutX="62.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="288.0">
+                           <children>
+                              <VBox fx:id="VboxC11" layoutX="6.0" prefHeight="66.0" prefWidth="290.0">
+                                 <children>
+                                    <TextArea fx:id="C2Text" minHeight="20.0" minWidth="260.0" prefHeight="67.0" prefWidth="269.0" style="-fx-border-style: none;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Choice3" layoutX="285.0" layoutY="732.0" prefHeight="114.0" prefWidth="359.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <Label layoutX="15.0" layoutY="51.0" prefHeight="24.0" prefWidth="58.0" text="Choice 3" />
+                        <Label layoutX="15.0" layoutY="87.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC3" layoutX="84.0" layoutY="86.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                        <AnchorPane fx:id="AnchorCauhoi12" layoutX="62.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="288.0">
+                           <children>
+                              <VBox fx:id="VboxC12" layoutX="6.0" prefHeight="66.0" prefWidth="290.0">
+                                 <children>
+                                    <TextArea fx:id="C3Text" minHeight="20.0" minWidth="260.0" prefHeight="67.0" prefWidth="269.0" style="-fx-border-style: none;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Choice4" layoutX="285.0" layoutY="855.0" prefHeight="114.0" prefWidth="359.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <Label layoutX="15.0" layoutY="51.0" prefHeight="24.0" prefWidth="58.0" text="Choice 4" />
+                        <Label layoutX="15.0" layoutY="87.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC4" layoutX="84.0" layoutY="86.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                        <AnchorPane fx:id="AnchorCauhoi13" layoutX="62.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="288.0">
+                           <children>
+                              <VBox fx:id="VboxC13" layoutX="6.0" prefHeight="66.0" prefWidth="290.0">
+                                 <children>
+                                    <TextArea fx:id="C4Text" minHeight="20.0" minWidth="260.0" prefHeight="67.0" prefWidth="269.0" style="-fx-border-style: none;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Choice5" layoutX="285.0" layoutY="977.0" prefHeight="114.0" prefWidth="359.0" style="-fx-background-color: rgb(197, 204, 214);">
+                     <children>
+                        <Label layoutX="15.0" layoutY="51.0" prefHeight="24.0" prefWidth="58.0" text="Choice 5" />
+                        <Label layoutX="15.0" layoutY="87.0" prefHeight="24.0" prefWidth="45.0" text="Grade" />
+                        <ComboBox fx:id="GradeC5" layoutX="84.0" layoutY="86.0" prefHeight="23.0" prefWidth="150.0" promptText="None" />
+                        <AnchorPane fx:id="AnchorCauhoi14" layoutX="62.0" layoutY="12.0" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="288.0">
+                           <children>
+                              <VBox fx:id="VboxC14" layoutX="6.0" prefHeight="66.0" prefWidth="290.0">
+                                 <children>
+                                    <TextArea fx:id="C5Text" minHeight="20.0" minWidth="260.0" prefHeight="67.0" prefWidth="269.0" style="-fx-border-style: none;" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="LabelAdd" alignment="CENTER" layoutX="188.0" layoutY="400.0" prefHeight="32.0" prefWidth="86.0" style="-fx-background-color: rgba(3, 98, 252,1);" text="Add imade" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelAddC1" alignment="CENTER" layoutX="653.0" layoutY="570.0" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: rgba(3, 98, 252,1);" text="Add imade for choice1" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelAddC2" alignment="CENTER" layoutX="653.0" layoutY="691.0" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: rgba(3, 98, 252,1);" text="Add imade for choice2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelAddC3" alignment="CENTER" layoutX="653.0" layoutY="814.0" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: rgba(3, 98, 252,1);" text="Add imade for choice3" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelAddC4" alignment="CENTER" layoutX="653.0" layoutY="937.0" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: rgba(3, 98, 252,1);" text="Add imade for choice4" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelAddC5" alignment="CENTER" layoutX="653.0" layoutY="1059.0" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: rgba(3, 98, 252,1);" text="Add imade for choice5" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
                     </children></Pane>
                 <Pane layoutX="5.0" layoutY="29.0" prefHeight="69.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
                     <children>
