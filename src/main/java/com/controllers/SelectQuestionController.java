@@ -144,4 +144,11 @@ public class SelectQuestionController implements Initializable {
         questionTable.getColumns().add(0, colBtn);
 
     }
+
+
+    @FXML
+    public void onSubmit() {
+        System.out.println("SElect " + selectedQuestions.size() +" questions!");
+        ExamApplication.setQuizQuestions(selectedQuestions);
+    }
 }

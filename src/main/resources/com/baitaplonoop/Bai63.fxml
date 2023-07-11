@@ -52,7 +52,7 @@
                   </AnchorPane>
                </content>
             </ScrollPane>
-            <Label alignment="CENTER" layoutX="50.0" layoutY="569.0" prefHeight="38.0" prefWidth="282.0" style="-fx-background-color: rgba(0,115,165,255);" text="ADD SELECT QUESTIONS TO THE QUIZ" textFill="WHITE">
+            <Label onMouseClicked="#onSubmit" alignment="CENTER" layoutX="50.0" layoutY="569.0" prefHeight="38.0" prefWidth="282.0" style="-fx-background-color: rgba(0,115,165,255);" text="ADD SELECT QUESTIONS TO THE QUIZ" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>

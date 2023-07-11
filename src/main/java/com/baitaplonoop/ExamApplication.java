@@ -66,7 +66,7 @@ public class ExamApplication extends Application {
             }
         }
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai63.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai1.fxml"));
         Parent parent = fxmlLoader.load();
 
         Scene scene = new Scene(parent, 926, 520);
@@ -89,5 +89,19 @@ public class ExamApplication extends Application {
         } catch (IOException i) {
             i.printStackTrace();
         }
+    }
+
+    public static void ExportQuizQuestionToPDF() {
+//        try {
+//            Document document = new Document();
+//            PdfWriter.getInstance(document, new FileOutputStream(FILE));
+//            document.open();
+//            addMetaData(document);
+//            addTitlePage(document);
+//            addContent(document);
+//            document.close();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
