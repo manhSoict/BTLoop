@@ -26,7 +26,6 @@ public class ExamApplication extends Application {
     }
     @Override
     public void start(Stage stage) throws IOException {
-
         try (FileInputStream fos = new FileInputStream("category.txt");
              ObjectInputStream oos = new ObjectInputStream(fos); ) {
             defaultCategory = (Category) oos.readObject();
