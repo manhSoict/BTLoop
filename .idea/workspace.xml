@@ -7,9 +7,10 @@
     <list default="true" id="322a0090-d631-46f8-b5d6-462122077425" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/baitaplonoop/ExamApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai34.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai34.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai34.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai34.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/drag and drop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controllers/controllerBai32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai32.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Bai32.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Test.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/baitaplonoop/Test.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -38,7 +39,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/Code/JAVA/BTLoop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Desktop/Code/JAVA/BTLoop/src/main/resources/com/baitaplonoop/Test.fxml&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
 }</component>
