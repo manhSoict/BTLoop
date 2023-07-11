@@ -74,5 +74,4 @@ public class controllerBai1 {
         stage.setScene(scene);
         stage.show();
     }
-
 }

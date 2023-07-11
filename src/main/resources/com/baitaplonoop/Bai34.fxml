@@ -74,7 +74,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <Label alignment="CENTER" layoutX="344.0" layoutY="388.0" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: rgb(231,11,11, 1);" text="IMPORT" textFill="WHITE">
+                  <Label onMouseClicked="#ImportAction" alignment="CENTER" layoutX="344.0" layoutY="388.0" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: rgb(231,11,11, 1);" text="IMPORT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>

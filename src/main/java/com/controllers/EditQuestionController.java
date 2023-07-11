@@ -123,10 +123,14 @@ public class EditQuestionController implements Initializable {
                 toggleBalnkmore3choice();
                 C3Text.setText(options.get(2).getContent());
                 GradeC3.setValue(options.get(2).getGrade());
+                if (options.size() >= 4) {
                 C4Text.setText(options.get(3).getContent());
                 GradeC4.setValue(options.get(3).getGrade());
-                C5Text.setText(options.get(4).getContent());
-                GradeC5.setValue(options.get(4).getGrade());
+                    if (options.size() >= 5) {
+                        C5Text.setText(options.get(4).getContent());
+                        GradeC5.setValue(options.get(4).getGrade());
+                    }
+                }
             }
         }
         questionName.setText(editingQuestion.getQuestionName());
