@@ -8,8 +8,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.StringConverter;
 
@@ -147,8 +153,16 @@ public class SelectQuestionController implements Initializable {
 
 
     @FXML
-    public void onSubmit() {
+    public void onSubmit(MouseEvent event) throws IOException {
         System.out.println("SElect " + selectedQuestions.size() +" questions!");
         ExamApplication.setQuizQuestions(selectedQuestions);
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai62.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
     }
 }
