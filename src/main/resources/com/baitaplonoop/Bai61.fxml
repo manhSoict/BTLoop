@@ -3,10 +3,12 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
@@ -15,16 +17,16 @@
             <children>
                 <Pane layoutX="6.0" layoutY="130.0" prefHeight="504.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
                     <children>
-                        <Label contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="292.0" text="Thi giữa kỳ 2 môn công nghệ" textAlignment="CENTER" textFill="#e70b0b">
+                        <Label fx:id="LabelQuizname" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="292.0" text="Thi giữa kỳ 2 môn công nghệ" textAlignment="CENTER" textFill="#e70b0b">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Label>
-                        <Label layoutX="827.0" layoutY="14.0" prefHeight="17.0" prefWidth="18.0">
+                        <Label fx:id="LabelSetting" layoutX="827.0" layoutY="14.0" prefHeight="17.0" prefWidth="18.0">
                             <graphic>
-                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fx:id="LabelSetting" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../../../../../static/image/settings.png" />
+                                        <Image url="@../../static/image/settings.png" />
                                     </image>
                                 </ImageView>
                             </graphic>
@@ -32,7 +34,7 @@
                         <Label layoutX="857.0" layoutY="14.0" prefHeight="17.0" prefWidth="18.0" />
                         <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="859.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../../../../static/image/Caret.png" />
+                                <Image url="@../../static/image/Caret%20blue.png" />
                             </image>
                         </ImageView>
                         <Label layoutX="604.0" layoutY="72.0" prefHeight="24.0" prefWidth="62.0" text="Time limit:" />
@@ -55,7 +57,7 @@
                                 </Label>
                             </children>
                         </Pane>
-                        <Label layoutX="666.0" layoutY="72.0" prefHeight="24.0" prefWidth="62.0" text="1 hour" />
+                        <Label fx:id="LabelTime" layoutX="666.0" layoutY="72.0" prefHeight="24.0" prefWidth="62.0" text="1 hour" />
                         <Label layoutX="604.0" layoutY="99.0" prefHeight="24.0" prefWidth="105.0" text="Granding methods:" />
                         <Label layoutX="709.0" layoutY="99.0" prefHeight="24.0" prefWidth="75.0" text="Last attempts" />
                         <Pane layoutX="5.0" layoutY="204.0" prefHeight="45.0" prefWidth="904.0" style="-fx-background-color: rgb(237,237,237, 1);">
@@ -72,12 +74,56 @@
                                 </Label>
                             </children>
                         </Pane>
-                        <Label alignment="CENTER" layoutX="660.0" layoutY="317.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="PREVIEW QUIZ NOW" textFill="WHITE">
+                        <Label fx:id="LabelPreviewquiznow" alignment="CENTER" layoutX="660.0" layoutY="317.0" prefHeight="33.0" prefWidth="210.0" style="-fx-background-color: rgb(0,159,229, 1);" text="PREVIEW QUIZ NOW" textFill="WHITE">
                             <font>
                                 <Font name="Calibri" size="18.0" />
                             </font>
                         </Label>
                         <ComboBox layoutX="604.0" layoutY="407.0" prefHeight="25.0" prefWidth="98.0" promptText="Jump to..." style="-fx-background-color: white; -fx-border-color: black;" />
+                  <AnchorPane fx:id="AnchorStart" layoutX="122.0" layoutY="275.0" prefHeight="200.0" prefWidth="450.0" style="-fx-border-color: rgba(230,230,230,1); -fx-background-color: WHITE;">
+                     <children>
+                        <Pane prefHeight="48.0" prefWidth="450.0" style="-fx-border-color: rgba(220,220,220,1);">
+                           <children>
+                              <Label layoutX="28.0" layoutY="-2.0" prefHeight="55.0" prefWidth="97.0" text="Start attempt">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="410.0" layoutY="14.0" prefHeight="20.0" prefWidth="20.0">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../static/image/x.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="51.0" layoutY="48.0" prefHeight="34.0" prefWidth="78.0" text="Time limit" textFill="#c02729">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="158.0" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: RGB(192,36,36,1);" text="START ATTEMPT" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="151.0" layoutY="158.0" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: rgb(0,159,229, 1);" text="CANCEL" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="284.6000061035156" endY="1.52587890625E-5" layoutX="145.0" layoutY="150.0" startX="-116.1999740600586" startY="1.52587890625E-5" stroke="GAINSBORO" />
+                        <TextArea editable="false" layoutX="27.0" layoutY="80.0" prefHeight="63.0" prefWidth="402.0" style="-fx-border-color: white; -fx-background-color: white;" text="Your attempt will have a time limit of 10 minutes. When you start, the &#10;timer will begin to count down and cannot be paused. You must finish&#10;your attempt before it expires. Are you sure wish to start now?" />
+                        <Label alignment="CENTER" layoutX="287.0" layoutY="158.0" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: RGB(192,36,36,1);" text="EXPORT PDF" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
                     </children></Pane>
                 <Pane layoutX="5.0" layoutY="50.0" prefHeight="76.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5); -fx-background-color: white;">
                     <children>
@@ -94,7 +140,7 @@
                         <Label alignment="CENTER" layoutX="224.0" layoutY="44.0" prefHeight="24.0" prefWidth="47.0" text="General" />
                         <Label alignment="CENTER" layoutX="213.0" layoutY="44.0" prefHeight="24.0" prefWidth="11.0" text="/" />
                         <Label alignment="CENTER" layoutX="272.0" layoutY="44.0" prefHeight="24.0" prefWidth="11.0" text="/" />
-                        <Label alignment="CENTER" layoutX="283.0" layoutY="44.0" prefHeight="24.0" prefWidth="167.0" text="Thi giữa kỳ 2 môn công nghệ" />
+                        <Label fx:id="LabelQuizname1" alignment="CENTER" layoutX="283.0" layoutY="44.0" prefHeight="24.0" prefWidth="167.0" text="Thi giữa kỳ 2 môn công nghệ" />
                     </children>
                 </Pane>
                 <Pane prefHeight="45.0" prefWidth="920.0" style="-fx-background-color: rgb(0,159,229, 1);" />
