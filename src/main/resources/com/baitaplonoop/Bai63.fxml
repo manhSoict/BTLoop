@@ -4,6 +4,8 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -27,7 +29,7 @@
             <Line endX="742.9999389648438" endY="3.814697265625E-6" layoutX="128.0" layoutY="44.0" startX="-100.0" stroke="#535252" />
             <ScrollPane layoutX="4.0" layoutY="55.0" prefHeight="497.0" prefWidth="872.0" AnchorPane.rightAnchor="7.2000000000000455">
                <content>
-                  <AnchorPane prefHeight="135.0" prefWidth="870.0" style="-fx-background-color: white;">
+                  <AnchorPane prefHeight="493.0" prefWidth="870.0" style="-fx-background-color: white;">
                      <children>
                         <Label alignment="CENTER" layoutX="63.0" layoutY="1.0" prefHeight="26.0" prefWidth="122.0" text="Select a catelogy:">
                            <font>
@@ -43,6 +45,16 @@
                         </ImageView>
                         <CheckBox layoutX="24.0" layoutY="91.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="156.0" text="Also show old questions" />
                         <CheckBox fx:id="showQuestion1" layoutX="24.0" layoutY="67.0" mnemonicParsing="false" onAction="#showpanelQuestion" onMouseClicked="#showpanelQuestion" prefHeight="17.0" prefWidth="261.0" text="Also show questions from the subcategories" />
+                        <ScrollPane layoutX="9.0" layoutY="135.0" prefHeight="347.0" prefWidth="853.0">
+                           <content>
+                              <TableView prefHeight="344.0" prefWidth="842.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="765.599983215332" text="C2" />
+                                </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
                      </children>
                   </AnchorPane>
                </content>
