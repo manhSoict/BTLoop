@@ -7,6 +7,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -16,47 +17,71 @@
          <children>
             <Pane layoutX="6.0" layoutY="152.0" prefHeight="367.0" prefWidth="914.0" style="-fx-border-color: rgba(171, 175, 179, 0.5); -fx-background-color: rgba(256,256,256,1);">
                <children>
-                  <Label layoutX="211.0" layoutY="86.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử KTLT">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="211.0" layoutY="140.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Tin học 7">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="211.0" layoutY="193.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Sử Địa 7">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="211.0" layoutY="248.0" prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 môn Công nghệ">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
                   <Label layoutX="164.0" layoutY="91.0" />
-                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="164.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../static/image/tichV.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="165.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../static/image/tichV.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="165.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../static/image/tichV.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="165.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../static/image/tichV.png" />
-                     </image>
-                  </ImageView>
+                  <FlowPane layoutX="187.0" layoutY="58.0" prefHeight="273.0" prefWidth="487.0" vgap="25.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="315.0" text="Thi thử KTLT">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../static/image/tichV.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Sử Địa 7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../static/image/tichV.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 môn Công nghệ">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../static/image/tichV.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="315.0" text="Thi thử GK2 Tin học 7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../static/image/tichV.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="LabelQuiz" prefHeight="30.0" prefWidth="315.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../static/image/tichV.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </FlowPane>
                </children>
             </Pane>
             <Pane layoutY="37.0" prefHeight="102.0" prefWidth="911.0" style="-fx-border-color: rgba(171, 175, 179, 0.5); -fx-background-color: rgba(256,256,256,1);">

@@ -14,7 +14,7 @@
     <content>
         <AnchorPane prefHeight="1142.0" prefWidth="926.0">
             <children>
-                <Pane fx:id="PaneMain" layoutX="6.0" layoutY="102.0" prefHeight="1322.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
+                <Pane fx:id="PaneMain" layoutX="6.0" layoutY="102.0" prefHeight="1522.0" prefWidth="914.0" style="-fx-border-color: rgba(136, 121, 215, 0.5); -fx-background-color: white;">
                     <children>
                         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="2.0" prefHeight="30.0" prefWidth="316.0" text="Edding a Multiple choice question" textAlignment="CENTER" textFill="#e70b0b">
                             <font>
