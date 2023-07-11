@@ -2,6 +2,7 @@ package com.controllers;
 
 import java.io.IOException;
 
+import com.baitaplonoop.ExamApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -24,11 +25,17 @@ public class controllerBai1 {
     @FXML
     private AnchorPane PanelQS;
     @FXML
-    public Label turnedittingon,LabelQuestions,LabelCategories,LabelImport;
+    public Label turnedittingon,LabelQuestions,LabelCategories,LabelImport, LabelQuiz;
     @FXML
     public Label setting;
     public void initialize() {
         PanelQS.setVisible(false); // ẩn panel PanelQS ban đầu
+        if (ExamApplication.getNewQuiz().equals("")) {
+            LabelQuiz.setVisible(false);
+        } else {
+            LabelQuiz.setVisible(true);
+            LabelQuiz.setText(ExamApplication.getNewQuiz());
+        }
     }
 	
     @FXML

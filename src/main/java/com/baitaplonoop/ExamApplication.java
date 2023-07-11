@@ -20,7 +20,7 @@ public class ExamApplication extends Application {
         ExamApplication.newQuiz = newQuiz;
     }
 
-    private static String newQuiz;
+    private static String newQuiz = "";
     private static Category defaultCategory;
     public static Category getDefaultCategory() {
         return defaultCategory;
@@ -54,7 +54,7 @@ public class ExamApplication extends Application {
             }
         }
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai1.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai61.fxml"));
         Parent parent = fxmlLoader.load();
 
         Scene scene = new Scene(parent, 926, 520);
