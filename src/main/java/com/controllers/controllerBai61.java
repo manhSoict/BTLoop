@@ -55,7 +55,7 @@ public class controllerBai61 implements Initializable{
         stage.show();
     }
     public void openBai74(MouseEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/GUI74.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai74.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
