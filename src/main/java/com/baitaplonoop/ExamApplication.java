@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ExamApplication extends Application {
 
@@ -21,6 +23,16 @@ public class ExamApplication extends Application {
     }
 
     private static String newQuiz = "";
+    private static List<Question> quizQuestions = new ArrayList<>();
+
+    public static List<Question> getQuizQuestions() {
+        return quizQuestions;
+    }
+
+    public static void setQuizQuestions(List<Question> quizQuestions) {
+        ExamApplication.quizQuestions = quizQuestions;
+    }
+
     private static Category defaultCategory;
     public static Category getDefaultCategory() {
         return defaultCategory;
@@ -54,7 +66,7 @@ public class ExamApplication extends Application {
             }
         }
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai61.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai63.fxml"));
         Parent parent = fxmlLoader.load();
 
         Scene scene = new Scene(parent, 926, 520);

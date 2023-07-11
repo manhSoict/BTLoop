@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="622.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai5">
+<AnchorPane prefHeight="622.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.SelectQuestionController">
     <children>
           <AnchorPane prefHeight="623.0" prefWidth="883.0" style="-fx-background-color: white;">
               <children>
@@ -36,21 +30,20 @@
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <ComboBox fx:id="comboBox1" layoutX="233.0" onAction="#showpanelQuestion" onMouseClicked="#showpanelQuestion" prefHeight="25.0" prefWidth="222.0" promptText="  Default" />
+                        <ComboBox fx:id="comboBox" layoutX="233.0" onAction="#onChangeCategory" prefHeight="25.0" prefWidth="222.0" promptText="  Default" />
                         <Label alignment="CENTER" layoutX="98.0" layoutY="41.0" prefHeight="26.0" prefWidth="83.0" text="Search options" textFill="#009fe5" />
                         <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="181.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../static/image/Caret%20blue.png" />
+<!--                              <Image url="@../../static/image/Caret%20blue.png" />-->
                            </image>
                         </ImageView>
                         <CheckBox layoutX="24.0" layoutY="91.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="156.0" text="Also show old questions" />
-                        <CheckBox fx:id="showQuestion1" layoutX="24.0" layoutY="67.0" mnemonicParsing="false" onAction="#showpanelQuestion" onMouseClicked="#showpanelQuestion" prefHeight="17.0" prefWidth="261.0" text="Also show questions from the subcategories" />
+                        <CheckBox fx:id="showQuestion1" layoutX="24.0" layoutY="67.0" mnemonicParsing="false" selected="true" prefHeight="17.0" prefWidth="261.0" text="Also show questions from the subcategories" />
                         <ScrollPane layoutX="9.0" layoutY="135.0" prefHeight="347.0" prefWidth="853.0">
                            <content>
-                              <TableView prefHeight="344.0" prefWidth="842.0">
+                              <TableView fx:id="questionTable" prefHeight="344.0" prefWidth="842.0">
                                 <columns>
-                                  <TableColumn prefWidth="75.0" text="C1" />
-                                  <TableColumn prefWidth="765.599983215332" text="C2" />
+                                  <TableColumn fx:id="questionColumn" prefWidth="765.599983215332" text="Question" />
                                 </columns>
                               </TableView>
                            </content>
