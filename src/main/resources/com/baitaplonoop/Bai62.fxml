@@ -74,7 +74,7 @@
                         <Label layoutX="846.0" layoutY="35.0" prefHeight="17.0" prefWidth="25.0" text="Add" />
                      </children>
                   </Pane>
-                  <AnchorPane fx:id="AnchorSelect" layoutX="740.0" layoutY="244.0" onRotationStarted="#initialize" prefHeight="88.0" prefWidth="163.0" style="-fx-background-color: white; -fx-border-color: rgba(171, 175, 179, 0.5);">
+                  <AnchorPane fx:id="AnchorSelect" layoutX="740.0" layoutY="244.0" prefHeight="88.0" prefWidth="163.0" style="-fx-background-color: white; -fx-border-color: rgba(171, 175, 179, 0.5);">
                      <children>
                         <Label layoutX="1.0" layoutY="2.0" prefHeight="28.0" prefWidth="159.0" style="-fx-background-color: rgba(247,247,247,1);" text="a new question">
                            <graphic>
