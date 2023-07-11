@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai62">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai62">
     <content>
         <AnchorPane prefHeight="520.0" prefWidth="926.0">
             <children>
@@ -83,10 +75,10 @@
                   </Pane>
                   <ScrollPane layoutX="66.0" layoutY="227.0" prefHeight="221.0" prefWidth="822.0">
                      <content>
-                        <TableView prefHeight="221.0" prefWidth="818.0">
+                        <TableView fx:id="questionTable" prefHeight="221.0" prefWidth="818.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
+                            <TableColumn fx:id="questionColumn" prefWidth="734.4000137448311" text="Questions" />
+                            <TableColumn fx:id="markColumn" prefWidth="84.0" text="Marks" />
                           </columns>
                         </TableView>
                      </content>
@@ -123,7 +115,7 @@
                      </children>
                   </AnchorPane>
                   <Label layoutX="722.0" layoutY="94.0" prefHeight="24.0" prefWidth="76.0" text="Total of mask:" />
-                  <Label alignment="CENTER" layoutX="798.0" layoutY="94.0" prefHeight="24.0" prefWidth="41.0" text="0.00" />
+                  <Label fx:id="totalMarks" alignment="CENTER" layoutX="798.0" layoutY="94.0" prefHeight="24.0" prefWidth="41.0" text="0.00" />
                     </children></Pane>
                 <Pane layoutX="5.0" layoutY="50.0" prefHeight="76.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5); -fx-background-color: white;">
                     <children>

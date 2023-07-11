@@ -2,9 +2,14 @@ package com.controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import com.baitaplonoop.ExamApplication;
+import com.entities.Question;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -12,6 +17,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -28,12 +35,25 @@ public class controllerBai62 implements Initializable{
     @FXML
     public AnchorPane AnchorSelect;
     @FXML
-    public Label LabelQuizname,LabelQuizname1,LabelAdd,LabelSave,LabelFrom;
+    public Label LabelQuizname,LabelQuizname1,LabelAdd,LabelSave,LabelFrom, totalMarks;
+
+    @FXML
+    TableView<Question> questionTable;
+    @FXML
+    TableColumn<Question, String> markColumn, questionColumn;
+
+    private List<Question> selectedQuestions = new ArrayList<>();
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         AnchorSelect.setVisible(false); // ẩn panel PanelQS ban đầu
         LabelQuizname.setText(ExamApplication.getNewQuiz());
         LabelQuizname1.setText(ExamApplication.getNewQuiz());
+        selectedQuestions = ExamApplication.getQuizQuestions();
+
+        questionColumn.setCellValueFactory( p -> new SimpleStringProperty(p.getValue().getQuestion()));
+        markColumn.setCellValueFactory(p -> new SimpleStringProperty("1.00"));
+        questionTable.setItems((ObservableList<Question>) selectedQuestions);
+        totalMarks.setText(selectedQuestions.size() + ".00");
     }
 
     @FXML
