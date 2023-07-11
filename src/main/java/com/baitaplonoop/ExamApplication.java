@@ -12,6 +12,15 @@ import java.io.*;
 
 public class ExamApplication extends Application {
 
+    public static String getNewQuiz() {
+        return newQuiz;
+    }
+
+    public static void setNewQuiz(String newQuiz) {
+        ExamApplication.newQuiz = newQuiz;
+    }
+
+    private static String newQuiz;
     private static Category defaultCategory;
     public static Category getDefaultCategory() {
         return defaultCategory;
@@ -45,7 +54,7 @@ public class ExamApplication extends Application {
             }
         }
 
-        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai21.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(ExamApplication.class.getResource("Bai1.fxml"));
         Parent parent = fxmlLoader.load();
 
         Scene scene = new Scene(parent, 926, 520);

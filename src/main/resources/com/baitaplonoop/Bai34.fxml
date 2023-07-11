@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai34">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.controllerBai34">
    <content>
       <AnchorPane prefHeight="520.0" prefWidth="926.0">
          <children>
@@ -74,7 +71,7 @@
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <Label onMouseClicked="#ImportAction" alignment="CENTER" layoutX="344.0" layoutY="388.0" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: rgb(231,11,11, 1);" text="IMPORT" textFill="WHITE">
+                  <Label alignment="CENTER" layoutX="344.0" layoutY="388.0" onMouseClicked="#ImportAction" prefHeight="39.0" prefWidth="101.0" style="-fx-background-color: rgb(231,11,11, 1);" text="IMPORT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -89,6 +86,7 @@
                         </ImageView>
                      </graphic>
                   </Label>
+                  <Label fx:id="selectedfileLabel" layoutX="277.0" layoutY="207.0" text="File selected: " />
                </children></Pane>
             <Pane layoutX="5.0" layoutY="44.0" prefHeight="77.0" prefWidth="916.0" style="-fx-border-color: rgba(171, 175, 179, 0.5);">
                <children>

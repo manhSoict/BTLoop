@@ -7,6 +7,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
+import com.baitaplonoop.ExamApplication;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -59,6 +60,9 @@ public class controllerBai5 implements Initializable {
     private TextField TextfieldTime;
     @FXML
     private Spinner SpinnerTime;
+
+    @FXML
+    private TextField quizName;
 
     public void initialize(URL arg0, ResourceBundle arg1) {
         // TODO Auto-generated method stub
@@ -115,7 +119,6 @@ public class controllerBai5 implements Initializable {
         SpinnerTime.setEditable(false);
         TextfieldTime.setStyle("-fx-background-color: gray");
         SpinnerTime.setStyle("-fx-background-color: gray;");
-
     }
 
     public void openBai1(MouseEvent event) throws IOException {
@@ -142,4 +145,12 @@ public class controllerBai5 implements Initializable {
             SpinnerTime.setStyle("-fx-background-color: gray;");
         }
     }
+
+    public void AddQuiz(MouseEvent event) throws IOException {
+        String newName = quizName.getText();
+        ExamApplication.setNewQuiz(newName);
+        openBai1(event);
+    }
+
+
 }

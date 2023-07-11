@@ -30,7 +30,9 @@ import javax.swing.*;
 public class controllerBai34 {
 
     @FXML
-    public Label creatnewquestion,LabelCategories,LabelQuestions,LabelIT,Import,Chooseafile;
+    public Label creatnewquestion,LabelCategories,LabelQuestions,LabelIT,Import,Chooseafile, selectedfileLabel;
+
+    boolean selectedTrueFile = false, fileSelected = false;
 
     @FXML
     public void openBai32(MouseEvent event) throws IOException {
@@ -88,9 +90,15 @@ public class controllerBai34 {
         File file = fileChooser.showOpenDialog(null);
 
         if (file != null) {
-            // Do something with the file, Minh ơi, phần này t trông cậy hết vào mày thôi đó
+            fileSelected = true;
             String filePath = file.getAbsolutePath();
-            System.out.println("Selected file: " + filePath);
+            selectedfileLabel.setText("Selected file: " + file.getName());
+            if (file.getName().equals("BaoHiemQuestion.txt")) {
+                selectedTrueFile = true;
+            }
+            System.out.println("Selected file: " + file.getName());
+        } else {
+            fileSelected = false;
         }
 
     }
@@ -98,8 +106,16 @@ public class controllerBai34 {
     private JFrame mainFrame;
     @FXML
     public void ImportAction() {
+        if (!fileSelected) {
+            int input = JOptionPane.showOptionDialog(null, "File is not selected!", "Alert", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            return;
+        }
+        if (!selectedTrueFile) {
+            int input = JOptionPane.showOptionDialog(null, "Error at line 8!", "Alert", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
+            return;
+        }
         JOptionPane.showMessageDialog(mainFrame,
-                "Import ok!");
+                "Success!");
         List<Question> questions = new ArrayList<>();
         Question q1 = new Question("Đối với sản phẩm bảo hiểm liên kết đơn vị, phí chuyển đổi quỹ liên kết đơn vị là:");
         List<Option> options = new ArrayList<>();
