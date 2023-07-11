@@ -1,6 +1,8 @@
 package com.controllers;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import com.baitaplonoop.ExamApplication;
 import javafx.fxml.FXML;
@@ -15,7 +17,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
-public class controllerBai1{
+public class controllerBai1 implements Initializable{
 	@FXML
 	private Stage stage;
 	@FXML
@@ -29,7 +31,8 @@ public class controllerBai1{
     public Label turnedittingon,LabelQuestions,LabelCategories,LabelImport, LabelQuiz;
     @FXML
     public Label setting;
-    public void initialize() {
+    @Override
+    public void initialize(URL arg0, ResourceBundle arg1) {
         PanelQS.setVisible(false); // ẩn panel PanelQS ban đầu
         if (ExamApplication.getNewQuiz().equals("")) {
             LabelQuiz.setVisible(false);
@@ -76,6 +79,14 @@ public class controllerBai1{
     }
     public void openBai34(MouseEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai34.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void openBai61(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/Bai61.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
