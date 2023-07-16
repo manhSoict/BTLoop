@@ -97,6 +97,7 @@ public class controllerBai34 {
                 selectedTrueFile = true;
             }
             System.out.println("Selected file: " + file.getName());
+
         } else {
             fileSelected = false;
         }
@@ -107,6 +108,7 @@ public class controllerBai34 {
     @FXML
     public void ImportAction() {
         if (!fileSelected) {
+
             int input = JOptionPane.showOptionDialog(null, "File is not selected!", "Alert", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
             return;
         }
@@ -162,6 +164,7 @@ public class controllerBai34 {
         options6.add(new Option("A. 1% Số Tiền Bảo Hiểm", "0"));
         options6.add(new Option("B. 0,5% Số Tiền Bảo Hiểm", "0"));
         options6.add(new Option("C. 1,5% Số Tiền Bảo Hiểm", "100"));
+        options6.add(new Option("D.  ", "0"));
         q6.setOptions(options6);
         questions.add(q6);
         Question q7 = new Question("Doanh nghiệp bảo hiểm có quyền từ chối trả tiền bảo hiểm cho người thụ hưởng hoặc từ chối bồi thường cho người được bảo hiểm trong trường hợp:");

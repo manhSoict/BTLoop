@@ -6,18 +6,27 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class controllerBai74 implements Initializable {
+
     @FXML
     public Label LabelQuizname;
+
     @FXML
     public TextArea TextQ1,TextQ2,TextQ3,TextQ4,TextQ5;
     @FXML
@@ -41,19 +50,19 @@ public class controllerBai74 implements Initializable {
             Answer2b.setText(second.getOptions().get(1).getContent());
             Answer2c.setText(second.getOptions().get(2).getContent());
             Answer2d.setText(second.getOptions().get(3).getContent());
-            Question third = selectedQuestions.get(0);
+            Question third = selectedQuestions.get(2);
             TextQ3.setText(third.getQuestion());
             Answer3a.setText(third.getOptions().get(0).getContent());
             Answer3b.setText(third.getOptions().get(1).getContent());
             Answer3c.setText(third.getOptions().get(2).getContent());
             Answer3d.setText(third.getOptions().get(3).getContent());
-            Question fourth = selectedQuestions.get(0);
+            Question fourth = selectedQuestions.get(3);
             TextQ4.setText(fourth.getQuestion());
             Answer4a.setText(fourth.getOptions().get(0).getContent());
             Answer4b.setText(fourth.getOptions().get(1).getContent());
             Answer4c.setText(fourth.getOptions().get(2).getContent());
             Answer4d.setText(fourth.getOptions().get(3).getContent());
-            Question fifth = selectedQuestions.get(0);
+            Question fifth = selectedQuestions.get(4);
             TextQ5.setText(fifth.getQuestion());
             Answer5a.setText(fifth.getOptions().get(0).getContent());
             Answer5b.setText(fifth.getOptions().get(1).getContent());
@@ -62,7 +71,12 @@ public class controllerBai74 implements Initializable {
         }
     }
 
-    public void Finish() {
-
+    public void openEnd(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/baitaplonoop/End.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 }

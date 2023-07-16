@@ -326,7 +326,7 @@
                               <Label alignment="TOP_CENTER" layoutX="97.0" layoutY="10.0" prefHeight="34.0" prefWidth="34.0" style="-fx-border-color: black;" text="5" GridPane.columnIndex="4" />
                            </children>
                         </GridPane>
-                        <Label onMouseClicked="#Finish" layoutX="17.0" layoutY="475.0" prefHeight="20.0" prefWidth="64.0" text="Finish...">
+                        <Label onMouseClicked="#openEnd" layoutX="17.0" layoutY="475.0" prefHeight="20.0" prefWidth="64.0" text="Finish...">
                            <font>
                               <Font size="14.0" />
                            </font>
